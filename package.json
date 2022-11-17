@@ -17,7 +17,7 @@
     "dev": "next dev",
     "start": "next start",
     "lint": "next lint --fix",
-    "format": "prettier --write './src/**/*.{ts,tsx}'"
+    "fmt": "prettier --write './src/**/*.{ts,tsx}'"
   },
   "dependencies": {
     "next": "^13.0.3",
