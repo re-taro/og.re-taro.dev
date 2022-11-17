@@ -1,0 +1,43 @@
+{
+  "name": "ogp.re-taro.dev",
+  "version": "1.0.0",
+  "description": "My personal OGP API",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/re-taro-dev/ogp.re-taro.dev"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Rintaro Itokawa",
+    "email": "me@re-taro.dev",
+    "url": "https://re-taro.dev"
+  },
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start",
+    "lint": "next lint --fix",
+    "format": "prettier --write './src/**/*.{ts,tsx}'"
+  },
+  "dependencies": {
+    "next": "^13.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "packageManager": "yarn@3.2.4",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.27.0",
+    "eslint-config-next": "^13.0.3",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-tailwindcss": "^3.7.0",
+    "postcss": "^8.4.19",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.3"
+  }
+}
