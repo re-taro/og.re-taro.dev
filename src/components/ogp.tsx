@@ -6,7 +6,7 @@ export type OgpInfo = {
 };
 
 const Ogp: FC<OgpInfo> = ({ title, date }) => (
-  <body
+  <div
     style={{
       display: "flex",
       justifyContent: "center",
@@ -85,7 +85,7 @@ const Ogp: FC<OgpInfo> = ({ title, date }) => (
         <p>{date}</p>
       </h2>
     </div>
-  </body>
+  </div>
 );
 
 export { Ogp };
