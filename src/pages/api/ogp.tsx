@@ -19,12 +19,12 @@ export default async function handler(req: NextRequest) {
     };
     const [notoSans, robotoMono] = await Promise.all([
       fetch(
-          new URL('../../../assets/fonts/NotoSansJp-Bold.otf', import.meta.url)
-      ).then((res) => res.arrayBuffer()),
+        new URL("../../../assets/fonts/NotoSansJp-Bold.otf", import.meta.url),
+      ).then(res => res.arrayBuffer()),
       fetch(
-          new URL('../../../assets/fonts/RobotoMono-medium.ttf', import.meta.url)
-      ).then((res) => res.arrayBuffer()),
-    ])
+        new URL("../../../assets/fonts/RobotoMono-Medium.ttf", import.meta.url),
+      ).then(res => res.arrayBuffer()),
+    ]);
     return new ImageResponse(<Ogp {...info} />, {
       width: 1200,
       height: 630,
@@ -33,13 +33,13 @@ export default async function handler(req: NextRequest) {
           name: "NotoSansJP",
           data: notoSans,
           weight: 700,
-          style: "normal"
+          style: "normal",
         },
         {
           name: "RobotoMono",
           data: robotoMono,
           weight: 500,
-          style: "normal"
+          style: "normal",
         },
       ],
     });
