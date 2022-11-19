@@ -9,7 +9,11 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: google-github-actions/release-please-action@v3
+      - uses: actions/checkout@v3
+      - id: release
+        uses: google-github-actions/release-please-action@v3
         with:
           release-type: simple
           include-v-in-tag: false
+      - if: ${{ steps.release.outputs.release_created }}
+        uses: ./.github/actions/production
