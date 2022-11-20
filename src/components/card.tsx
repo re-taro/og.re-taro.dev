@@ -16,8 +16,8 @@ const Card: FC<Props> = ({ title, date }) => (
       justifyContent: "center",
       padding: "30px",
       fontFamily: "NotoSansJP",
-      backgroundColor: "#171726",
-      color: "#f2f0e6",
+      backgroundColor: "#2E3440",
+      color: "#E5E9F0",
     }}
   >
     <div tw="flex flex-col p-12 w-full h-full border-solid border-4 border-white rounded-xl">
