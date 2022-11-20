@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/re-taro/ogp.re-taro.dev/compare/1.1.0...2.0.0) (2022-11-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* **fix:** Fix ci's input methods
+
+### Continuous Integration
+
+* **fix:** Fix ci's input methods ([8d2416d](https://github.com/re-taro/ogp.re-taro.dev/commit/8d2416dcd7333b601b0039c1d41f3fef185d396e))
+
 ## [1.1.0](https://github.com/re-taro/ogp.re-taro.dev/compare/1.0.0...1.1.0) (2022-11-20)
 
 
