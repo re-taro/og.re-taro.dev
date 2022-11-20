@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.0](https://github.com/re-taro/ogp.re-taro.dev/compare/2.0.0...2.1.0) (2022-11-20)
+
+
+### Features
+
+* Add _document.tsx for SEO ([11e3120](https://github.com/re-taro/ogp.re-taro.dev/commit/11e312072adbef0bce471b12bd7b4b9a5e47b5bd))
+* **deps:** Add sharp for production build ([764d9a3](https://github.com/re-taro/ogp.re-taro.dev/commit/764d9a3ce9359da1e6aa0ba641c87db0f5204d6e))
+
 ## [2.0.0](https://github.com/re-taro/ogp.re-taro.dev/compare/1.1.0...2.0.0) (2022-11-20)
 
 
