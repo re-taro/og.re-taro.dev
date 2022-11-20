@@ -19,7 +19,9 @@ const Home = () => (
     <h2 className="text-2xl">Sample</h2>
     <p>https://ogp.re-taro.dev/api/ogp?title=ogp.re-taro.dev&date=2004-04-25</p>
     <Image
-      src={"https://ogp.re-taro.dev/api/ogp?title=ogp.re-taro.dev&date=2004-04-25"}
+      src={
+        "https://ogp.re-taro.dev/api/ogp?title=ogp.re-taro.dev&date=2004-04-25"
+      }
       alt="OGP"
       width={1200}
       height={630}

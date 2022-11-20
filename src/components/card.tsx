@@ -3,9 +3,10 @@ import type { FC } from "react";
 export type Props = {
   title: string;
   date: string;
+  icon: string;
 };
 
-const Card: FC<Props> = ({ title, date }) => (
+const Card: FC<Props> = ({ title, date, icon }) => (
   <div
     style={{
       height: "100%",
@@ -30,9 +31,7 @@ const Card: FC<Props> = ({ title, date }) => (
         <div tw="flex items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={
-              "https://res.cloudinary.com/re-taro/image/upload/v1668613913/me/rintaro_uyeutx.jpg"
-            }
+            src={icon}
             alt="icon"
             width={100}
             height={100}
