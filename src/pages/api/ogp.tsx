@@ -17,15 +17,20 @@ export default async function handler(req: NextRequest) {
       : "";
     const [notoSans, robotoMono] = await Promise.all([
       fetch(
-        new URL("../../../assets/fonts/NotoSansJp-Bold.otf", import.meta.url),
+        new URL("../../assets/fonts/NotoSansJp-Bold.otf", import.meta.url),
       ).then(res => res.arrayBuffer()),
       fetch(
-        new URL("../../../assets/fonts/RobotoMono-Medium.ttf", import.meta.url),
+        new URL("../../assets/fonts/RobotoMono-Medium.ttf", import.meta.url),
       ).then(res => res.arrayBuffer()),
     ]);
+    const icon = new URL(
+      "../../assets/rintaro.jpg",
+      import.meta.url,
+    ).toString();
     const info: Props = {
       title,
       date,
+      icon,
     };
     return new ImageResponse(<Card {...info} />, {
       width: 1200,
