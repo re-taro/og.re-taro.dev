@@ -17,3 +17,7 @@ jobs:
           include-v-in-tag: false
       - if: ${{ steps.release.outputs.release_created }}
         uses: ./.github/actions/production
+        with:
+          vercel: ${{ secrets.VERCEL_TOKEN }}
+          org: ${{ secrets.ORG_ID }}
+          project: ${{ secrets.PROJECT_ID }}
