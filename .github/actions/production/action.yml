@@ -1,5 +1,15 @@
 name: production deploy
 description: Deploy production build
+inputs:
+  vercel:
+    description: Vercel token
+    required: true
+  org:
+    description: Vercel org id
+    required: true
+  project:
+    description: Vercel project id
+    required: true
 runs:
   using: composite
   steps:
@@ -8,16 +18,16 @@ runs:
       id: deployment
       with:
         step: start
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ github.token }}
         env: Production
     - uses: amondnet/vercel-action@v25
       id: deploy
       with:
-        vercel-token: ${{ secrets.VERCEL_TOKEN }}
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+        vercel-token: ${{ input.vercel }}
+        github-token: ${{ github.token }}
         vercel-args: "--prod"
-        vercel-org-id: ${{ secrets.ORG_ID }}
-        vercel-project-id: ${{ secrets.PROJECT_ID }}
+        vercel-org-id: ${{ input.org }}
+        vercel-project-id: ${{ input.project }}
     - name: Update deployment status
       uses: bobheadxi/deployments@v1
       if: always()
