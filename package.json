@@ -23,7 +23,8 @@
     "@vercel/og": "^0.0.20",
     "next": "^13.0.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sharp": "^0.31.2"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
