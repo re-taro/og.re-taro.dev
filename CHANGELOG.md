@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/re-taro/ogp.re-taro.dev/compare/1.0.0...1.1.0) (2022-11-20)
+
+
+### Features
+
+* Update file path ([8b35672](https://github.com/re-taro/ogp.re-taro.dev/commit/8b35672a3fe2ee662796c96fc8c9f786409e37f2))
+
 ## [1.0.0](https://github.com/re-taro/ogp.re-taro.dev/compare/v1.0.0...1.0.0) (2022-11-20)
 
 
