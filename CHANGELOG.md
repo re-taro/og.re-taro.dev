@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.4](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.3...2.1.4) (2022-12-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to ^13.0.7 ([40d2a1f](https://github.com/re-taro/ogp.re-taro.dev/commit/40d2a1fa41c9a2406477b95d858a23518fd83c86))
+
 ## [2.1.3](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.2...2.1.3) (2022-12-03)
 
 
