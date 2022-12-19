@@ -1,12 +1,13 @@
 import type { FC } from "react";
 
-export type Props = {
+export type CardProps = {
   title: string;
   date: string;
+  domain: string;
   icon: string;
 };
 
-const Card: FC<Props> = ({ title, date, icon }) => (
+const Card: FC<CardProps> = ({ title, date, domain, icon }) => (
   <div
     style={{
       height: "100%",
@@ -43,7 +44,7 @@ const Card: FC<Props> = ({ title, date, icon }) => (
                 fontFamily: "RobotoMono",
               }}
             >
-              re-taro.dev
+              {domain}
             </p>
           </h2>
         </div>
