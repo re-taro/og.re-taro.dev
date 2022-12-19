@@ -32,7 +32,7 @@
     "sharp": "0.31.2"
   },
   "devDependencies": {
-    "@types/node": "18.11.16",
+    "@types/node": "18.11.17",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.9",
     "eslint": "8.30.0",

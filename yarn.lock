@@ -1743,10 +1743,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.11.16":
-  version: 18.11.16
-  resolution: "@types/node@npm:18.11.16"
-  checksum: 23603ecc1cc5afdd2311671565e1bd1a8905e18ed7f05857089eebe524824a3347dd0c3de9c1c291839f7cf21bcf5633903cdf7905efa0fdc7464cc7606fc9fa
+"@types/node@npm:18.11.17":
+  version: 18.11.17
+  resolution: "@types/node@npm:18.11.17"
+  checksum: 1933afd068d5c75c068c6c4df6d10edb3b0b2bb6503d544e2f0496ac007c90596e6a5e284a8ef032451bc16f871b7e46719d7d2bea60e9b25d13a77d52161cac
   languageName: node
   linkType: hard
 
@@ -3556,9 +3556,9 @@ __metadata:
   linkType: hard
 
 "ignore@npm:^5.2.0":
-  version: 5.2.1
-  resolution: "ignore@npm:5.2.1"
-  checksum: 7251d00cba49fe88c4f3565fadeb4aa726ba38294a9a79ffed542edc47bafd989d4b2ccf65700c5b1b26a1e91dfc7218fb23017937c79216025d5caeec0ee9d5
+  version: 5.2.2
+  resolution: "ignore@npm:5.2.2"
+  checksum: 2086f12e8dca6978001b3861562272888fcf231f464696938049e0aa576d0562a8f31926630a973e302944c20c64639c14cfdd725bacd208dcda973021377420
   languageName: node
   linkType: hard
 
@@ -4414,7 +4414,7 @@ __metadata:
     "@chakra-ui/react": 2.4.3
     "@emotion/react": 11.10.5
     "@emotion/styled": 11.10.5
-    "@types/node": 18.11.16
+    "@types/node": 18.11.17
     "@types/react": 18.0.26
     "@types/react-dom": 18.0.9
     "@vercel/og": 0.0.21
