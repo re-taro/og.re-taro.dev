@@ -1,8 +1,7 @@
 import { ImageResponse } from '@vercel/og'
 import { Card } from '@/components/card'
 import type { NextRequest } from 'next/server'
-
-import type { Props } from '@/components/card'
+import type { CardProps } from '@/components/card'
 
 export const config = {
   runtime: 'experimental-edge',
@@ -15,6 +14,7 @@ export default async function handler(req: NextRequest) {
     const date = searchParams.has('date')
       ? `📅 ― ${searchParams.get('date')?.slice(0, 16)}`
       : ''
+    const domain = searchParams.has('domain') ? `${searchParams.get('domain')?.slice(0, 64)}` : 're-taro.dev'
     const [notoSans, robotoMono] = await Promise.all([
       fetch(
         new URL('../../assets/fonts/NotoSansJp-Bold.otf', import.meta.url),
@@ -27,9 +27,10 @@ export default async function handler(req: NextRequest) {
       '../../assets/rintaro.jpg',
       import.meta.url,
     ).toString()
-    const info: Props = {
+    const info: CardProps = {
       title,
       date,
+      domain,
       icon,
     }
     return new ImageResponse(<Card {...info} />, {

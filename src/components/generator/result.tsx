@@ -11,38 +11,36 @@ export const ResultSection: FC<ResultSectionProps> = ({
   generatedImageUrl,
   ogImageUrl,
   onClick,
-}) => {
-  return (
-    <Box as="section">
-      <AspectRatio ratio={1200 / 630}>
-        <Tooltip label={`${ogImageUrl} [click to copy]`} placement="top">
-          <Image
-            borderRadius={8}
-            shadow="xl"
-            src={generatedImageUrl}
-            alt="OGP"
-            width="1200"
-            height="630"
-            bgGradient="linear(to-br, gray.500, gray.800)"
-            onClick={onClick}
-            _hover={{ cursor: 'pointer' }}
-          />
-        </Tooltip>
-      </AspectRatio>
-      <Tooltip label="click to copy">
-        <Text
+}) => (
+  <Box as="section">
+    <AspectRatio ratio={1200 / 630}>
+      <Tooltip label={`${ogImageUrl} [click to copy]`} placement="top">
+        <Image
+          borderRadius={8}
+          shadow="xl"
+          src={generatedImageUrl}
+          alt="OGP"
+          width="1200"
+          height="630"
+          bgGradient="linear(to-br, gray.500, gray.800)"
           onClick={onClick}
-          wordBreak="break-all"
-          _hover={{
-            cursor: 'pointer',
-            textDecoration: 'underline',
-          }}
-          fontSize="sm"
-          color="gray"
-        >
-          {ogImageUrl}
-        </Text>
+          _hover={{ cursor: 'pointer' }}
+        />
       </Tooltip>
-    </Box>
-  )
-}
+    </AspectRatio>
+    <Tooltip label="click to copy">
+      <Text
+        onClick={onClick}
+        wordBreak="break-all"
+        _hover={{
+          cursor: 'pointer',
+          textDecoration: 'underline',
+        }}
+        fontSize="sm"
+        color="gray"
+      >
+        {ogImageUrl}
+      </Text>
+    </Tooltip>
+  </Box>
+)

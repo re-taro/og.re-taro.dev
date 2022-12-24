@@ -26,13 +26,11 @@ export const Wrapper: FC<WrapperProps> = ({
   isInvalid,
   isRequired,
   children,
-}) => {
-  return (
-    <FormControl isInvalid={isInvalid} isRequired={isRequired}>
-      {label && <FormLabel>{label}</FormLabel>}
-      {children}
-      {errorText && <FormErrorMessage>{errorText}</FormErrorMessage>}
-      {helperText && <FormHelperText>{helperText}</FormHelperText>}
-    </FormControl>
-  )
-}
+}) => (
+  <FormControl isInvalid={isInvalid} isRequired={isRequired}>
+    {label && <FormLabel>{label}</FormLabel>}
+    {children}
+    {errorText && <FormErrorMessage>{errorText}</FormErrorMessage>}
+    {helperText && <FormHelperText>{helperText}</FormHelperText>}
+  </FormControl>
+)

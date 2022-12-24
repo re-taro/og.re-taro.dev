@@ -7,7 +7,7 @@ export interface CardProps {
   icon: string
 }
 
-const Card: FC<CardProps> = ({ title, date, domain, icon }) => (
+export const Card: FC<CardProps> = ({ title, date, domain, icon }) => (
   <div
     style={{
       height: '100%',
@@ -57,5 +57,3 @@ const Card: FC<CardProps> = ({ title, date, domain, icon }) => (
     </div>
   </div>
 )
-
-export { Card }

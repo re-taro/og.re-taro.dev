@@ -1,5 +1,4 @@
 import pickBy from 'lodash-es/pickBy'
-
 import type { OgImageOption, OgImageOptionConverted } from '@/types/og'
 
 export const buildOgImageUrl = (options: OgImageOption): string => {
