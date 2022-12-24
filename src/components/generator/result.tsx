@@ -1,11 +1,11 @@
-import { AspectRatio, Box, Image, Text, Tooltip } from "@chakra-ui/react";
-import type { FC } from "react";
+import { AspectRatio, Box, Image, Text, Tooltip } from '@chakra-ui/react'
+import type { FC } from 'react'
 
-type ResultSectionProps = {
-  generatedImageUrl: string;
-  ogImageUrl: string;
-  onClick: () => void;
-};
+interface ResultSectionProps {
+  generatedImageUrl: string
+  ogImageUrl: string
+  onClick: () => void
+}
 
 export const ResultSection: FC<ResultSectionProps> = ({
   generatedImageUrl,
@@ -25,7 +25,7 @@ export const ResultSection: FC<ResultSectionProps> = ({
             height="630"
             bgGradient="linear(to-br, gray.500, gray.800)"
             onClick={onClick}
-            _hover={{ cursor: "pointer" }}
+            _hover={{ cursor: 'pointer' }}
           />
         </Tooltip>
       </AspectRatio>
@@ -34,8 +34,8 @@ export const ResultSection: FC<ResultSectionProps> = ({
           onClick={onClick}
           wordBreak="break-all"
           _hover={{
-            cursor: "pointer",
-            textDecoration: "underline",
+            cursor: 'pointer',
+            textDecoration: 'underline',
           }}
           fontSize="sm"
           color="gray"
@@ -44,5 +44,5 @@ export const ResultSection: FC<ResultSectionProps> = ({
         </Text>
       </Tooltip>
     </Box>
-  );
-};
+  )
+}

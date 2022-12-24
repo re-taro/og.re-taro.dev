@@ -1,25 +1,25 @@
-import type { FC } from "react";
+import type { FC } from 'react'
 
-export type CardProps = {
-  title: string;
-  date: string;
-  domain: string;
-  icon: string;
-};
+export interface CardProps {
+  title: string
+  date: string
+  domain: string
+  icon: string
+}
 
 const Card: FC<CardProps> = ({ title, date, domain, icon }) => (
   <div
     style={{
-      height: "100%",
-      width: "100%",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
-      padding: "30px",
-      fontFamily: "NotoSansJP",
-      backgroundColor: "#2E3440",
-      color: "#E5E9F0",
+      height: '100%',
+      width: '100%',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '30px',
+      fontFamily: 'NotoSansJP',
+      backgroundColor: '#2E3440',
+      color: '#E5E9F0',
     }}
   >
     <div tw="flex flex-col p-12 w-full h-full border-solid border-4 border-white rounded-xl">
@@ -41,7 +41,7 @@ const Card: FC<CardProps> = ({ title, date, domain, icon }) => (
           <h2 tw="text-4xl mr-5">
             <p
               style={{
-                fontFamily: "RobotoMono",
+                fontFamily: 'RobotoMono',
               }}
             >
               {domain}
@@ -56,6 +56,6 @@ const Card: FC<CardProps> = ({ title, date, domain, icon }) => (
       </div>
     </div>
   </div>
-);
+)
 
-export { Card };
+export { Card }

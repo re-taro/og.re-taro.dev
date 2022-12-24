@@ -1,11 +1,11 @@
-import type { InputProps as ChakraInputProps } from "@chakra-ui/react";
-import { Input as ChakraInput } from "@chakra-ui/react";
-import { forwardRef } from "react";
+import { Input as ChakraInput } from '@chakra-ui/react'
+import { forwardRef } from 'react'
 
-import type { WrapperProps } from "./wrapper";
-import { Wrapper } from "./wrapper";
+import { Wrapper } from './wrapper'
+import type { WrapperProps } from './wrapper'
+import type { InputProps as ChakraInputProps } from '@chakra-ui/react'
 
-export type InputProps = WrapperProps & ChakraInputProps;
+export type InputProps = WrapperProps & ChakraInputProps
 
 // eslint-disable-next-line react/display-name
 export const Input = forwardRef<HTMLInputElement, InputProps>(
@@ -29,6 +29,6 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           isRequired={isRequired}
         />
       </Wrapper>
-    );
+    )
   },
-);
+)

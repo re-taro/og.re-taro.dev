@@ -4,7 +4,7 @@ const config = {
   swcMinify: true,
   images: {
     domains: ['ogp.re-taro.dev'],
-  }
-};
+  },
+}
 
-module.exports = config;
+module.exports = config

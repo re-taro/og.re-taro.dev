@@ -1,3 +1,3 @@
-import { fontLoader } from "./loader";
+import { fontLoader } from './loader'
 
-export const roboto = fontLoader("/assets/fonts/RobotoMono-Medium.ttf");
+export const roboto = fontLoader('/assets/fonts/RobotoMono-Medium.ttf')

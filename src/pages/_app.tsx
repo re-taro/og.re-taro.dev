@@ -1,10 +1,10 @@
-import "@/styles/globals.css";
+import '@/styles/globals.css'
 
-import type { NextPage } from "next";
-import type { AppProps } from "next/app";
+import type { NextPage } from 'next'
+import type { AppProps } from 'next/app'
 
 const App: NextPage<AppProps> = ({ Component, pageProps }) => (
   <Component {...pageProps} />
-);
+)
 
-export default App;
+export default App

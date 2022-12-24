@@ -1,3 +1,3 @@
-import { fontLoader } from "./loader";
+import { fontLoader } from './loader'
 
-export const noto = fontLoader("/assets/fonts/NotoSansJp-Bold.otf");
+export const noto = fontLoader('/assets/fonts/NotoSansJp-Bold.otf')
