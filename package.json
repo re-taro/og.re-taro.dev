@@ -1,23 +1,24 @@
 {
   "name": "ogp.re-taro.dev",
-  "version": "2.1.4",
   "description": "My personal OGP API",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/re-taro-dev/ogp.re-taro.dev"
-  },
+  "version": "2.1.4",
+  "packageManager": "yarn@3.3.0",
   "license": "MIT",
   "author": {
     "name": "Rintaro Itokawa",
     "email": "me@re-taro.dev",
     "url": "https://re-taro.dev"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/re-taro-dev/ogp.re-taro.dev"
+  },
   "scripts": {
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "lint": "next lint --fix",
-    "fmt": "prettier --write './src/**/*.{ts,tsx}'"
+    "lint": "next lint",
+    "fmt": "eslint . --fix"
   },
   "dependencies": {
     "@chakra-ui/react": "2.4.3",
@@ -33,16 +34,12 @@
     "sharp": "0.31.2"
   },
   "devDependencies": {
+    "@re-taro/eslint-config": "1.3.0",
     "@types/lodash-es": "4.17.6",
     "@types/node": "18.11.17",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.9",
     "eslint": "8.30.0",
-    "eslint-config-next": "13.0.7",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-simple-import-sort": "8.0.0",
-    "prettier": "2.8.1",
     "typescript": "4.9.4"
-  },
-  "packageManager": "yarn@3.3.0"
+  }
 }
