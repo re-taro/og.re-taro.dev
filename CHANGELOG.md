@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.6](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.5...2.1.6) (2022-12-24)
+
+
+### Bug Fixes
+
+* fix og base path ([10f61fa](https://github.com/re-taro/ogp.re-taro.dev/commit/10f61fa61fb912fb292d43c772146eb61d936303))
+
 ## [2.1.5](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.4...2.1.5) (2022-12-24)
 
 
