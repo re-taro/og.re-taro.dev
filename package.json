@@ -24,6 +24,8 @@
     "@chakra-ui/react": "2.4.3",
     "@emotion/react": "11.10.5",
     "@emotion/styled": "11.10.5",
+    "@fontsource/outfit": "4.5.10",
+    "@iconify/react": "4.0.1",
     "@vercel/og": "0.0.21",
     "framer-motion": "7.6.19",
     "lodash-es": "4.17.21",
