@@ -8,5 +8,5 @@ export const buildOgImageUrl = (options: OgImageOption): string => {
   const purgedOptions = pickBy(converted)
   const urlParams = new URLSearchParams(purgedOptions).toString()
   const params = urlParams ? `?${urlParams}` : ''
-  return `${import.meta.url}/api/ogp${params}`
+  return `https://ogp.re-taro.dev/api/ogp${params}`
 }
