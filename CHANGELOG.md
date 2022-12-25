@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.1.7](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.6...2.1.7) (2022-12-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @chakra-ui/react to v2.4.4 ([545d70e](https://github.com/re-taro/ogp.re-taro.dev/commit/545d70e5883e584c16f1b4f68009f79804fe3c58))
+* **deps:** update dependency framer-motion to v7.10.3 ([c19cedf](https://github.com/re-taro/ogp.re-taro.dev/commit/c19cedfeacbf3932eb14f7199637d8bb17d8c77d))
+* **deps:** update dependency framer-motion to v8 ([e95c7f9](https://github.com/re-taro/ogp.re-taro.dev/commit/e95c7f9c2637fed0abb4bade213bbdfea1e61048))
+* **deps:** update dependency react-hook-form to v7.41.1 ([a476dfc](https://github.com/re-taro/ogp.re-taro.dev/commit/a476dfc51bb5858660727a150014f14c105c4d2a))
+
 ## [2.1.6](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.5...2.1.6) (2022-12-24)
 
 
