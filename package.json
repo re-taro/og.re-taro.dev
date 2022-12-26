@@ -1,7 +1,7 @@
 {
   "name": "ogp.re-taro.dev",
   "description": "My personal OGP API",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "packageManager": "yarn@3.3.1",
   "license": "MIT",
   "author": {
