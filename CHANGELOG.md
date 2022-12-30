@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.8](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.7...2.1.8) (2022-12-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @chakra-ui/react to v2.4.6 ([bcf0eea](https://github.com/re-taro/ogp.re-taro.dev/commit/bcf0eea31dfaee523f033da2ffbc9476f3d904c0))
+* **deps:** update dependency react-hook-form to v7.41.2 ([05798a9](https://github.com/re-taro/ogp.re-taro.dev/commit/05798a9fa6dc71eb51dd9d416df87e33bc5bbd3f))
+
 ## [2.1.7](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.6...2.1.7) (2022-12-25)
 
 
