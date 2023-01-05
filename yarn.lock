@@ -1752,20 +1752,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@re-taro/eslint-config@npm:1.3.4":
-  version: 1.3.4
-  resolution: "@re-taro/eslint-config@npm:1.3.4"
+"@re-taro/eslint-config@npm:1.3.5":
+  version: 1.3.5
+  resolution: "@re-taro/eslint-config@npm:1.3.5"
   dependencies:
-    "@re-taro/eslint-plugin": 1.3.4
+    "@re-taro/eslint-plugin": 1.3.5
   peerDependencies:
     eslint: ^8.0.0
-  checksum: 98a536ea9eae49d27b2f944c298bb4d57e2790db3bc18fa00eb979303f8e7776369c77874eecf30805c4f814d5973c0e5d42203de4ffb2242b66969ac6b06d37
+  checksum: 4bd18e29a643e2d290703e5e5c63f81ba6fffb24139ff6ceb4c88f3c8f928cb28ad92ee7a4fa7c4363dfa33e16006e102fc439a509cc79d08616a7be9719e7cf
   languageName: node
   linkType: hard
 
-"@re-taro/eslint-plugin@npm:1.3.4":
-  version: 1.3.4
-  resolution: "@re-taro/eslint-plugin@npm:1.3.4"
+"@re-taro/eslint-plugin@npm:1.3.5":
+  version: 1.3.5
+  resolution: "@re-taro/eslint-plugin@npm:1.3.5"
   dependencies:
     "@next/eslint-plugin-next": 13.1.1
     "@typescript-eslint/eslint-plugin": 5.48.0
@@ -1775,7 +1775,7 @@ __metadata:
     eslint-plugin-eslint-comments: 3.2.0
     eslint-plugin-html: 7.1.0
     eslint-plugin-import: 2.26.0
-    eslint-plugin-jsonc: 2.5.0
+    eslint-plugin-jsonc: 2.6.0
     eslint-plugin-jsx-a11y: 6.6.1
     eslint-plugin-markdown: 3.0.0
     eslint-plugin-n: 15.6.0
@@ -1789,7 +1789,7 @@ __metadata:
     yaml-eslint-parser: 1.1.0
   peerDependencies:
     eslint: ^8.0.0
-  checksum: 926acfd765f3e1f81ad100975aa06f326fcac57c6135b2a5c55f867c6cf2536c1330a9ccfa3f3135f0e8181ed6c8d7f2dfcea68abfbffd98640fc59f92a24ce9
+  checksum: 102f52cc7f5b4eae5c0fe6fe002cc971f5662983b0384f4a71a511104f4c5d8feff1e08276c628ff8160e06a9d95d3ebaeecc3ae434d8f1604593c890054c8fe
   languageName: node
   linkType: hard
 
@@ -3173,16 +3173,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsonc@npm:2.5.0":
-  version: 2.5.0
-  resolution: "eslint-plugin-jsonc@npm:2.5.0"
+"eslint-plugin-jsonc@npm:2.6.0":
+  version: 2.6.0
+  resolution: "eslint-plugin-jsonc@npm:2.6.0"
   dependencies:
     eslint-utils: ^3.0.0
     jsonc-eslint-parser: ^2.0.4
     natural-compare: ^1.4.0
   peerDependencies:
     eslint: ">=6.0.0"
-  checksum: 2fae07391d0f9b45341b2aae598f6d58ff4fd8b0e49da1c7a860418ec6b3fcc9bf1ee7e20b89c8aff326c9c638ace95e2f8b5c53c958c29fc9995516351daf7c
+  checksum: 9cbdc9c09c63abcb754609b23045821aead8dd109475af76e388af6cb6d91c61c7d4eb05674faf5b39c7f03957d7282841a614a8fc44520303f68917ed92892b
   languageName: node
   linkType: hard
 
@@ -5061,7 +5061,7 @@ __metadata:
     "@emotion/styled": 11.10.5
     "@fontsource/outfit": 4.5.10
     "@iconify/react": 4.0.1
-    "@re-taro/eslint-config": 1.3.4
+    "@re-taro/eslint-config": 1.3.5
     "@types/lodash-es": 4.17.6
     "@types/node": 18.11.18
     "@types/react": 18.0.26
