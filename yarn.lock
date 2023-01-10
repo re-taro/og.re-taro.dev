@@ -3619,9 +3619,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:8.3.3":
-  version: 8.3.3
-  resolution: "framer-motion@npm:8.3.3"
+"framer-motion@npm:8.3.4":
+  version: 8.3.4
+  resolution: "framer-motion@npm:8.3.4"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.2
     "@motionone/dom": ^10.15.3
@@ -3633,7 +3633,7 @@ __metadata:
   dependenciesMeta:
     "@emotion/is-prop-valid":
       optional: true
-  checksum: 1ef480d2c0cc33b462fc54c5a6ea06f9c1ecd030d59c63260edee10707a73180809bf46299fa744dd7962bb702e8b9263f059b84d81a8121a174fa3d45875413
+  checksum: 59200c1497a21abb6a269b200f4b01278dc9a430f445a8cdcdb05b81f8074265fbd6a585107e75a94f14087935d133969da88fbf4b1d398625ef7d1e90fa9586
   languageName: node
   linkType: hard
 
@@ -5061,7 +5061,7 @@ __metadata:
     "@types/react-dom": 18.0.10
     "@vercel/og": 0.0.25
     eslint: 8.31.0
-    framer-motion: 8.3.3
+    framer-motion: 8.3.4
     lodash-es: 4.17.21
     next: 13.1.1
     react: 18.2.0
