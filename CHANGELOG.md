@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.1.12](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.11...2.1.12) (2023-01-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @vercel/og to v0.0.22 ([61e4665](https://github.com/re-taro/ogp.re-taro.dev/commit/61e466548eb647bca2ca3c0bc6990ef8ac6922dc))
+* **deps:** update dependency @vercel/og to v0.0.23 ([1c0de6e](https://github.com/re-taro/ogp.re-taro.dev/commit/1c0de6e7ae45a07ced468bc2349a8eb4f20743d1))
+* **deps:** update dependency @vercel/og to v0.0.25 ([7067c0e](https://github.com/re-taro/ogp.re-taro.dev/commit/7067c0e095b7c8a649bfa7b6bb9b8857d7955647))
+* **deps:** update dependency framer-motion to v8.1.9 ([b9a326e](https://github.com/re-taro/ogp.re-taro.dev/commit/b9a326e58d7d49281e0dc706dfc67fae8db0b5f7))
+* **deps:** update dependency framer-motion to v8.2.4 ([58169f1](https://github.com/re-taro/ogp.re-taro.dev/commit/58169f108d0664ae1012649a7a51e3d978ca8d42))
+* **deps:** update dependency framer-motion to v8.3.3 ([ec5bc36](https://github.com/re-taro/ogp.re-taro.dev/commit/ec5bc36865225f8b7f5b8b1484186c3323ce0c1f))
+* **deps:** update dependency framer-motion to v8.3.4 ([9219309](https://github.com/re-taro/ogp.re-taro.dev/commit/9219309fd39d72ff350ff55b0b88d25fb8ea6036))
+* **deps:** update dependency framer-motion to v8.4.0 ([ba59116](https://github.com/re-taro/ogp.re-taro.dev/commit/ba5911615ccb91f26e51f849c8a04f16afa2811a))
+
 ## [2.1.11](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.10...2.1.11) (2023-01-04)
 
 
