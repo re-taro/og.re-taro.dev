@@ -26,7 +26,7 @@
     "@emotion/styled": "11.10.5",
     "@fontsource/outfit": "4.5.10",
     "@iconify/react": "4.0.1",
-    "@vercel/og": "0.0.25",
+    "@vercel/og": "0.0.26",
     "framer-motion": "8.4.2",
     "lodash-es": "4.17.21",
     "next": "13.1.1",
