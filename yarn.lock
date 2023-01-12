@@ -2056,14 +2056,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/og@npm:0.0.26":
-  version: 0.0.26
-  resolution: "@vercel/og@npm:0.0.26"
+"@vercel/og@npm:0.0.27":
+  version: 0.0.27
+  resolution: "@vercel/og@npm:0.0.27"
   dependencies:
     "@resvg/resvg-wasm": 2.0.0-alpha.4
     satori: 0.0.46
     yoga-wasm-web: 0.3.0
-  checksum: 3d6647ea8d801da6a233c10c5cd66ce8392909f3c853fd1c49d3ce07ebcec8ef4f95c57b2c576575590e4fcd00e1e691d0b1c9215afb106192bc3c7ae8e21eb3
+  checksum: 543ed081284913d5b33fe439a75b389f6c00e2a929d03be238b192a5b7f9d7e03c10f3bdf42e842c55950efdbba75957c03ca7375aed0339c333911a608f7e7a
   languageName: node
   linkType: hard
 
@@ -5186,7 +5186,7 @@ __metadata:
     "@types/node": 18.11.18
     "@types/react": 18.0.26
     "@types/react-dom": 18.0.10
-    "@vercel/og": 0.0.26
+    "@vercel/og": 0.0.27
     eslint: 8.31.0
     framer-motion: 8.4.2
     lodash-es: 4.17.21
