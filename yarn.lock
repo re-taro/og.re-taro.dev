@@ -5193,7 +5193,7 @@ __metadata:
     next: 13.1.2
     react: 18.2.0
     react-dom: 18.2.0
-    react-hook-form: 7.41.5
+    react-hook-form: 7.42.0
     sharp: 0.31.3
     typescript: 4.9.4
   languageName: unknown
@@ -5549,12 +5549,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-hook-form@npm:7.41.5":
-  version: 7.41.5
-  resolution: "react-hook-form@npm:7.41.5"
+"react-hook-form@npm:7.42.0":
+  version: 7.42.0
+  resolution: "react-hook-form@npm:7.42.0"
   peerDependencies:
     react: ^16.8.0 || ^17 || ^18
-  checksum: ca28b2deb4fdbf120ff726f4d66366711725df03b677f52b2577a69bf761e409644bf06b8342dbc2dd5cdfdb05efecdbc2361799f405a35d65911fd0b4d8bdde
+  checksum: 597e687671bf133c3c0bfb4b48afd59c1ac6c0ad3fcfb9db505f737d535d6fb1f2a1691296e79bed5f837124fde8eae1fe748f38a2553f2fe20ff170fe5b7e86
   languageName: node
   linkType: hard
 
