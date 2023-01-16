@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.1.13](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.12...2.1.13) (2023-01-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @chakra-ui/react to v2.4.7 ([e8e552e](https://github.com/re-taro/ogp.re-taro.dev/commit/e8e552e8573f981d351781c33263d6999cad39b3))
+* **deps:** update dependency @vercel/og to v0.0.26 ([2b7ea12](https://github.com/re-taro/ogp.re-taro.dev/commit/2b7ea12518636c3ef294f8fdacec60453f6f55b7))
+* **deps:** update dependency @vercel/og to v0.0.27 ([64052f1](https://github.com/re-taro/ogp.re-taro.dev/commit/64052f1e1292f54ba54f8032a5200dda8aa6858c))
+* **deps:** update dependency framer-motion to v8.4.2 ([28bb6b5](https://github.com/re-taro/ogp.re-taro.dev/commit/28bb6b5d83f954d3e2ef201e7a0bbc9bf93eac95))
+* **deps:** update dependency framer-motion to v8.4.3 ([29cb116](https://github.com/re-taro/ogp.re-taro.dev/commit/29cb11669f443cdc43a2c3557865ad2e2e52bc98))
+* **deps:** update dependency next to v13.1.2 ([92ebbea](https://github.com/re-taro/ogp.re-taro.dev/commit/92ebbea3929a37bcf89a61bf675795352f5abde4))
+* **deps:** update dependency react-hook-form to v7.42.0 ([3e2e4e2](https://github.com/re-taro/ogp.re-taro.dev/commit/3e2e4e231da35f0dbffc135ce123bfcdc1aa95af))
+* **deps:** update dependency react-hook-form to v7.42.1 ([bd5f06b](https://github.com/re-taro/ogp.re-taro.dev/commit/bd5f06b80ead03179dab6afef2cac797b96c7be0))
+
 ## [2.1.12](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.11...2.1.12) (2023-01-10)
 
 
