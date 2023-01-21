@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.14](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.13...2.1.14) (2023-01-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @fontsource/outfit to v4.5.11 ([a01efcc](https://github.com/re-taro/ogp.re-taro.dev/commit/a01efcc8e353e845ec30bd22438b9bb9a2fe686c))
+* **deps:** update dependency framer-motion to v8.4.6 ([08fc0f2](https://github.com/re-taro/ogp.re-taro.dev/commit/08fc0f267a11600db81dff3bd46c51cbebbee5e0))
+* **deps:** update dependency framer-motion to v8.4.7 ([5c50ae2](https://github.com/re-taro/ogp.re-taro.dev/commit/5c50ae2361cd6ca278a47895ce3b88ccd8ca2890))
+* **deps:** update dependency framer-motion to v8.5.0 ([f92e3b3](https://github.com/re-taro/ogp.re-taro.dev/commit/f92e3b3b8e6e2bb470ab4d953b18de1d8a1bd5f1))
+* **deps:** update dependency next to v13.1.3 ([c48910f](https://github.com/re-taro/ogp.re-taro.dev/commit/c48910fb43746cf7eac1f53de72bc9c0c6b68eea))
+* **deps:** update dependency next to v13.1.4 ([26e73e3](https://github.com/re-taro/ogp.re-taro.dev/commit/26e73e3891ac3201494ff307dc7fa2085c28b6db))
+
 ## [2.1.13](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.12...2.1.13) (2023-01-15)
 
 
