@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.1.16](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.15...2.1.16) (2023-01-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @iconify/react to v4.1.0 ([913b1c2](https://github.com/re-taro/ogp.re-taro.dev/commit/913b1c2e48f04bf62548e125efbe709e0aa61d53))
+* **deps:** update dependency framer-motion to v8.5.4 ([c446278](https://github.com/re-taro/ogp.re-taro.dev/commit/c44627888d22a92fe8cc785d7ff2033365bde87b))
+* **deps:** update dependency next to v13.1.6 ([2aafd2e](https://github.com/re-taro/ogp.re-taro.dev/commit/2aafd2e7810be6575b45414a995750a53bfb4445))
+
 ## [2.1.15](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.14...2.1.15) (2023-01-26)
 
 
