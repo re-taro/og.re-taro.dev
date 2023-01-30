@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.17](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.16...2.1.17) (2023-01-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-hook-form to v7.43.0 ([348ace2](https://github.com/re-taro/ogp.re-taro.dev/commit/348ace26585dbee40b0a37ec806f259026cd7c38))
+
 ## [2.1.16](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.15...2.1.16) (2023-01-28)
 
 
