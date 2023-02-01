@@ -2,7 +2,7 @@
   "name": "ogp.re-taro.dev",
   "description": "My personal OGP API",
   "version": "2.1.18",
-  "packageManager": "yarn@3.3.1",
+  "packageManager": "yarn@3.4.0",
   "license": "MIT",
   "author": {
     "name": "Rintaro Itokawa",
