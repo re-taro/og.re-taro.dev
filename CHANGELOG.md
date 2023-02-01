@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.18](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.17...2.1.18) (2023-01-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency framer-motion to v8.5.5 ([9b4f301](https://github.com/re-taro/ogp.re-taro.dev/commit/9b4f301a7de05138952fb70e962a5a412c6e096d))
+
 ## [2.1.17](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.16...2.1.17) (2023-01-30)
 
 
