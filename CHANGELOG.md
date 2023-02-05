@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.20](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.19...2.1.20) (2023-02-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @vercel/og to v0.1.0 ([0986bd5](https://github.com/re-taro/ogp.re-taro.dev/commit/0986bd5956dcef3904ba37142e690e7360a6432a))
+
 ## [2.1.19](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.18...2.1.19) (2023-02-02)
 
 
