@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.21](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.20...2.1.21) (2023-02-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency framer-motion to v9.0.2 ([4d9c912](https://github.com/re-taro/ogp.re-taro.dev/commit/4d9c912402f102b651c718983fb3c8814bdf4b21))
+* **deps:** update dependency react-hook-form to v7.43.1 ([265318d](https://github.com/re-taro/ogp.re-taro.dev/commit/265318db730c1e0b58227de5448464c1de1e9b3c))
+
 ## [2.1.20](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.19...2.1.20) (2023-02-05)
 
 
