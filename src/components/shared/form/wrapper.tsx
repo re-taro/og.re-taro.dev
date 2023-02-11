@@ -7,15 +7,15 @@ import {
 import type {
   FormControlProps,
   FormErrorMessageProps,
+  FormHelperTextProps,
   FormLabelProps,
-  HelpTextProps,
 } from '@chakra-ui/react'
 import type { FC, ReactNode } from 'react'
 
 export type WrapperProps = {
   label?: FormLabelProps['children']
   errorText?: FormErrorMessageProps['children']
-  helperText?: HelpTextProps['children']
+  helperText?: FormHelperTextProps['children']
   children?: ReactNode
 } & Pick<FormControlProps, 'isInvalid' | 'isRequired'>
 
