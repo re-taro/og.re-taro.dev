@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.2.0](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.21...2.2.0) (2023-02-11)
+
+
+### Features
+
+* update config for edge runtime ([1e934ad](https://github.com/re-taro/ogp.re-taro.dev/commit/1e934ad505a57d073401c3cbdfa998b4e35e0f82))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @chakra-ui/react to v2.4.9 ([ef2785d](https://github.com/re-taro/ogp.re-taro.dev/commit/ef2785d107415de9ed49a33ebfc05a31bce88e4c))
+* fix props type from Chakra ([1956809](https://github.com/re-taro/ogp.re-taro.dev/commit/1956809253f1b4bef342c456c5e930bd005da738))
+
 ## [2.1.21](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.20...2.1.21) (2023-02-08)
 
 
