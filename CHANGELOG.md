@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/re-taro/ogp.re-taro.dev/compare/2.2.0...2.2.1) (2023-02-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @chakra-ui/react to v2.5.0 ([ba11226](https://github.com/re-taro/ogp.re-taro.dev/commit/ba11226e391a0f96bf8cd960e4a77eac4a273921))
+
 ## [2.2.0](https://github.com/re-taro/ogp.re-taro.dev/compare/2.1.21...2.2.0) (2023-02-11)
 
 
