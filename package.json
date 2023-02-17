@@ -23,7 +23,7 @@
   "dependencies": {
     "@chakra-ui/react": "2.5.1",
     "@emotion/react": "11.10.6",
-    "@emotion/styled": "11.10.5",
+    "@emotion/styled": "11.10.6",
     "@fontsource/outfit": "4.5.11",
     "@iconify/react": "4.1.0",
     "@vercel/og": "0.1.0",
