@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.2.4](https://github.com/re-taro/ogp.re-taro.dev/compare/2.2.3...2.2.4) (2023-02-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @emotion/react to v11.10.6 ([7e14cd2](https://github.com/re-taro/ogp.re-taro.dev/commit/7e14cd2f856148faad23405e0fe12cf8d0235360))
+* **deps:** update dependency @emotion/styled to v11.10.6 ([d263b39](https://github.com/re-taro/ogp.re-taro.dev/commit/d263b39429819f9ff5feca1d82c6b7ff6e534e6e))
+* **deps:** update dependency framer-motion to v9.0.4 ([f3f6b75](https://github.com/re-taro/ogp.re-taro.dev/commit/f3f6b759d744ac02f5ba4a7ff099e58b969bf204))
+
 ## [2.2.3](https://github.com/re-taro/ogp.re-taro.dev/compare/2.2.2...2.2.3) (2023-02-16)
 
 
