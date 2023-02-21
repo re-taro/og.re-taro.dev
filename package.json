@@ -27,7 +27,7 @@
     "@fontsource/outfit": "4.5.11",
     "@iconify/react": "4.1.0",
     "@vercel/og": "0.1.0",
-    "framer-motion": "9.0.4",
+    "framer-motion": "9.0.7",
     "lodash-es": "4.17.21",
     "next": "13.1.6",
     "react": "18.2.0",
