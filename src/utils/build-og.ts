@@ -1,12 +1,12 @@
-import pickBy from 'lodash-es/pickBy'
-import type { OgImageOption, OgImageOptionConverted } from '@/types/og'
+import pickBy from 'lodash-es/pickBy';
+import type { OgImageOption, OgImageOptionConverted } from '@/types/og';
 
 export const buildOgImageUrl = (options: OgImageOption): string => {
   const converted: OgImageOptionConverted = {
     ...options,
-  }
-  const purgedOptions = pickBy(converted)
-  const urlParams = new URLSearchParams(purgedOptions).toString()
-  const params = urlParams ? `?${urlParams}` : ''
-  return `https://ogp.re-taro.dev/api/ogp${params}`
-}
+  };
+  const purgedOptions = pickBy(converted);
+  const urlParams = new URLSearchParams(purgedOptions).toString();
+  const params = urlParams ? `?${urlParams}` : '';
+  return `https://ogp.re-taro.dev/api/ogp${params}`;
+};

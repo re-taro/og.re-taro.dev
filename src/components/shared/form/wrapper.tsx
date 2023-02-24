@@ -3,14 +3,14 @@ import {
   FormErrorMessage,
   FormHelperText,
   FormLabel,
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
 import type {
   FormControlProps,
   FormErrorMessageProps,
   FormHelperTextProps,
   FormLabelProps,
-} from '@chakra-ui/react'
-import type { FC, ReactNode } from 'react'
+} from '@chakra-ui/react';
+import type { FC, ReactNode } from 'react';
 
 export type WrapperProps = {
   label?: FormLabelProps['children']
@@ -33,4 +33,4 @@ export const Wrapper: FC<WrapperProps> = ({
     {errorText && <FormErrorMessage>{errorText}</FormErrorMessage>}
     {helperText && <FormHelperText>{helperText}</FormHelperText>}
   </FormControl>
-)
+);

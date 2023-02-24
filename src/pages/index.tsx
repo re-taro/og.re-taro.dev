@@ -1,6 +1,6 @@
-import { Button, Flex, Heading, Stack, Text } from '@chakra-ui/react'
-import Link from 'next/link'
-import type { NextPage } from 'next'
+import { Button, Flex, Heading, Stack, Text } from '@chakra-ui/react';
+import Link from 'next/link';
+import type { NextPage } from 'next';
 
 const Home: NextPage = () => (
   <Stack
@@ -18,6 +18,6 @@ const Home: NextPage = () => (
       </Button>
     </Flex>
   </Stack>
-)
+);
 
-export default Home
+export default Home;

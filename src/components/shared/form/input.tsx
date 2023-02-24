@@ -1,8 +1,8 @@
-import { Input as ChakraInput } from '@chakra-ui/react'
-import { forwardRef } from 'react'
-import { Wrapper } from './wrapper'
-import type { WrapperProps } from './wrapper'
-import type { InputProps as ChakraInputProps } from '@chakra-ui/react'
+import { Input as ChakraInput } from '@chakra-ui/react';
+import { forwardRef } from 'react';
+import { Wrapper } from './wrapper';
+import type { WrapperProps } from './wrapper';
+import type { InputProps as ChakraInputProps } from '@chakra-ui/react';
 
 export type InputProps = WrapperProps & ChakraInputProps
 
@@ -28,4 +28,4 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
       />
     </Wrapper>
   ),
-)
+);

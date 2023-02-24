@@ -1,5 +1,5 @@
-import { AspectRatio, Box, Image, Text, Tooltip } from '@chakra-ui/react'
-import type { FC } from 'react'
+import { AspectRatio, Box, Image, Text, Tooltip } from '@chakra-ui/react';
+import type { FC } from 'react';
 
 interface ResultSectionProps {
   generatedImageUrl: string
@@ -43,4 +43,4 @@ export const ResultSection: FC<ResultSectionProps> = ({
       </Text>
     </Tooltip>
   </Box>
-)
+);

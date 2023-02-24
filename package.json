@@ -18,7 +18,7 @@
     "dev": "next dev",
     "start": "next start",
     "lint": "next lint",
-    "fmt": "eslint . --fix"
+    "fmt": "eslint . --ext .cjs,.ts,.tsx --fix"
   },
   "dependencies": {
     "@chakra-ui/react": "2.5.1",

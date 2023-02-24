@@ -1,4 +1,4 @@
-import type { FC } from 'react'
+import type { FC } from 'react';
 
 export interface CardProps {
   title: string
@@ -56,4 +56,4 @@ export const Card: FC<CardProps> = ({ title, date, domain, icon }) => (
       </div>
     </div>
   </div>
-)
+);
