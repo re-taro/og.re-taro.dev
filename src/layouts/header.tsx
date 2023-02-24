@@ -1,7 +1,7 @@
-import { Box, Flex, Heading } from '@chakra-ui/react'
-import Link from 'next/link'
-import { ThemeToggle } from './toggle'
-import type { FC } from 'react'
+import { Box, Flex, Heading } from '@chakra-ui/react';
+import Link from 'next/link';
+import { ThemeToggle } from './toggle';
+import type { FC } from 'react';
 
 export const Header: FC = () => (
   <Flex as="header" width="full" align="center">
@@ -12,4 +12,4 @@ export const Header: FC = () => (
       <ThemeToggle />
     </Box>
   </Flex>
-)
+);

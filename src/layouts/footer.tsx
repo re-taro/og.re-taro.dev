@@ -1,5 +1,5 @@
-import { Flex, Link, Text } from '@chakra-ui/react'
-import type { FC } from 'react'
+import { Flex, Link, Text } from '@chakra-ui/react';
+import type { FC } from 'react';
 
 export const Footer: FC = () =>
   (
@@ -11,4 +11,4 @@ export const Footer: FC = () =>
         </Link>
       </Text>
     </Flex>
-  )
+  );

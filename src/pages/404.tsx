@@ -6,13 +6,13 @@ import {
   Image,
   Text,
   useColorMode,
-} from '@chakra-ui/react'
-import Link from 'next/link'
-import { Box } from '@/components/motion/box'
-import type { NextPage } from 'next'
+} from '@chakra-ui/react';
+import Link from 'next/link';
+import { Box } from '@/components/motion/box';
+import type { NextPage } from 'next';
 
 const Page404: NextPage = () => {
-  const { colorMode } = useColorMode()
+  const { colorMode } = useColorMode();
   return (
     <>
       <Box
@@ -45,7 +45,7 @@ const Page404: NextPage = () => {
         </ChakraBox>
       </ChakraBox>
     </>
-  )
-}
+  );
+};
 
-export default Page404
+export default Page404;

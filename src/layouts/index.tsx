@@ -1,7 +1,7 @@
-import { Box } from '@chakra-ui/react'
-import { Footer } from './footer'
-import { Header } from './header'
-import type { FC, ReactNode } from 'react'
+import { Box } from '@chakra-ui/react';
+import { Footer } from './footer';
+import { Header } from './header';
+import type { FC, ReactNode } from 'react';
 
 interface LayoutProps {
   children: ReactNode
@@ -18,4 +18,4 @@ export const Layout: FC<LayoutProps> = ({ children }) =>
         <Footer />
       </Box>
     </Box>
-  )
+  );

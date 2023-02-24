@@ -5,6 +5,6 @@ const config = {
   images: {
     domains: ['ogp.re-taro.dev'],
   },
-}
+};
 
-module.exports = config
+module.exports = config;

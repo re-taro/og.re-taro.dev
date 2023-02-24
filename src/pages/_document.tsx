@@ -1,13 +1,13 @@
-import NextDocument, { Head, Html, Main, NextScript } from 'next/document'
-import { ColorModeScript } from '@chakra-ui/react'
-import type { DocumentContext, DocumentInitialProps } from 'next/document'
-import type { ReactElement } from 'react'
+import NextDocument, { Head, Html, Main, NextScript } from 'next/document';
+import { ColorModeScript } from '@chakra-ui/react';
+import type { DocumentContext, DocumentInitialProps } from 'next/document';
+import type { ReactElement } from 'react';
 
 class Document extends NextDocument {
   static override getInitialProps(
     context: DocumentContext,
   ): Promise<DocumentInitialProps> {
-    return NextDocument.getInitialProps(context)
+    return NextDocument.getInitialProps(context);
   }
 
   override render(): ReactElement {
@@ -56,8 +56,8 @@ class Document extends NextDocument {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 
-export default Document
+export default Document;
