@@ -1487,12 +1487,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:13.2.0":
-  version: 13.2.0
-  resolution: "@next/eslint-plugin-next@npm:13.2.0"
+"@next/eslint-plugin-next@npm:13.2.1":
+  version: 13.2.1
+  resolution: "@next/eslint-plugin-next@npm:13.2.1"
   dependencies:
     glob: 7.1.7
-  checksum: f4f207c1b233d43d8dac6df74465c455555e49ddd635a6a86dde4a6c21b92e7464136d26796799804b5efeb665166fa66c26442fb152445d0da2e57a17255a1b
+  checksum: e4b49709d987ad5a6a67bdbcf43798e3a1d5d72e0cf503ae2dd8553add79221cb706ba824ab985d4cfccc5a6aafb2fa949f371f9b3a45832bc370a093cc9f096
   languageName: node
   linkType: hard
 
@@ -1655,22 +1655,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@re-taro/eslint-config@npm:1.5.0":
-  version: 1.5.0
-  resolution: "@re-taro/eslint-config@npm:1.5.0"
+"@re-taro/eslint-config@npm:1.5.1":
+  version: 1.5.1
+  resolution: "@re-taro/eslint-config@npm:1.5.1"
   dependencies:
-    "@re-taro/eslint-plugin": 1.5.0
+    "@re-taro/eslint-plugin": 1.5.1
   peerDependencies:
     eslint: ^8.0.0
-  checksum: cd9d5b08186426db47b4f95cd27170137d5cc17cd8c0daa39acc1c90c1eff57bb6cbef93df2aa6300fab4ef04710cac26db9b21a6c91624314406ef8d5c2829a
+  checksum: d864231f4973dd0e3cf95e27b262cacbaab3d8a879e258cb6a4866d1f78d82cd6e6cbb76fc0641f37cd5983ef971d258d3a0f30877d178841aec422741309305
   languageName: node
   linkType: hard
 
-"@re-taro/eslint-plugin@npm:1.5.0":
-  version: 1.5.0
-  resolution: "@re-taro/eslint-plugin@npm:1.5.0"
+"@re-taro/eslint-plugin@npm:1.5.1":
+  version: 1.5.1
+  resolution: "@re-taro/eslint-plugin@npm:1.5.1"
   dependencies:
-    "@next/eslint-plugin-next": 13.2.0
+    "@next/eslint-plugin-next": 13.2.1
     "@typescript-eslint/eslint-plugin": 5.53.0
     "@typescript-eslint/parser": 5.53.0
     eslint-config-standard: 17.0.0
@@ -1692,7 +1692,7 @@ __metadata:
     yaml-eslint-parser: 1.1.0
   peerDependencies:
     eslint: ^8.0.0
-  checksum: 1798bccba00e72af68512d36a47dface7c65b7f476896464494bf684285b040a6914881ad9804ae9cf56398b021a067a3a6b3ee90031a7401c867f48d6a01b4d
+  checksum: b48a3408f28395cf8dc65046c979c103c99784c2b8a1fa36542ee66ce2003c949b62796ed1141c15ba890bf69b8edb04470818f9510c8a3de77fddde6d136822
   languageName: node
   linkType: hard
 
@@ -5086,7 +5086,7 @@ __metadata:
     "@emotion/styled": 11.10.6
     "@fontsource/outfit": 4.5.11
     "@iconify/react": 4.1.0
-    "@re-taro/eslint-config": 1.5.0
+    "@re-taro/eslint-config": 1.5.1
     "@types/lodash-es": 4.17.6
     "@types/node": 18.14.1
     "@types/react": 18.0.28
