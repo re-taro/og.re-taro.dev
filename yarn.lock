@@ -1494,12 +1494,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:13.2.3":
-  version: 13.2.3
-  resolution: "@next/eslint-plugin-next@npm:13.2.3"
+"@next/eslint-plugin-next@npm:13.2.4":
+  version: 13.2.4
+  resolution: "@next/eslint-plugin-next@npm:13.2.4"
   dependencies:
     glob: 7.1.7
-  checksum: d79674900f60d76ab01ad18f35a84d4dbefb4276df88d757d681c35be04004cd561628ededb68c0d7815cb2da794db4d5dde31b95dfc3124e5106ddd5096009c
+  checksum: 95f9a84922ec1c73aa51b794f9d2dc49c165a1c793db17cab4558097d31aaf65c2e5e3390d0691c056fac105562d6dc974b13b1df79981f8b7faba005f6eb3b5
   languageName: node
   linkType: hard
 
@@ -1662,22 +1662,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@re-taro/eslint-config@npm:1.6.1":
-  version: 1.6.1
-  resolution: "@re-taro/eslint-config@npm:1.6.1"
+"@re-taro/eslint-config@npm:1.6.2":
+  version: 1.6.2
+  resolution: "@re-taro/eslint-config@npm:1.6.2"
   dependencies:
-    "@re-taro/eslint-plugin": 1.6.1
+    "@re-taro/eslint-plugin": 1.6.2
   peerDependencies:
     eslint: ^8.0.0
-  checksum: ea3245f850f7649401411f77dfe68af98053c9e1e016ae1e9830efbc847fcb7248c1033bf5d6994f3451d4b7903a7c54b9cc3c47f245327d6027b54bd039c8da
+  checksum: a684b94acc5696a0b35a09540d2ff743771618a8d86c0c90773e660ee7b2d9cbc93ae184cf1b0a3906ae4b9aa824445449cad2e05cbe05f1e61b50c5d95cba26
   languageName: node
   linkType: hard
 
-"@re-taro/eslint-plugin@npm:1.6.1":
-  version: 1.6.1
-  resolution: "@re-taro/eslint-plugin@npm:1.6.1"
+"@re-taro/eslint-plugin@npm:1.6.2":
+  version: 1.6.2
+  resolution: "@re-taro/eslint-plugin@npm:1.6.2"
   dependencies:
-    "@next/eslint-plugin-next": 13.2.3
+    "@next/eslint-plugin-next": 13.2.4
     "@typescript-eslint/eslint-plugin": 5.54.1
     "@typescript-eslint/parser": 5.54.1
     eslint-config-standard: 17.0.0
@@ -1696,11 +1696,11 @@ __metadata:
     eslint-plugin-unicorn: 46.0.0
     eslint-plugin-vue: 9.9.0
     eslint-plugin-yml: 1.5.0
-    jsonc-eslint-parser: 2.1.0
-    yaml-eslint-parser: 1.1.0
+    jsonc-eslint-parser: 2.2.0
+    yaml-eslint-parser: 1.2.0
   peerDependencies:
     eslint: ^8.0.0
-  checksum: 3f5c0769ad13d65e7192905b8423a4db75442ef29ae9df7c0997047374a6c0bb639b0d0a86e947fc0d281fb42ebad57c8340862f309acb0a64a8a6057b0949d0
+  checksum: 143e82936013df20aa463427ef3874a6ffa697976666355d8c2ab0f9572d1d47f6c6b448c0d80b61c914ad1ff42358d9eea0d01ac0fbbe676104f5cea858e9f9
   languageName: node
   linkType: hard
 
@@ -4488,7 +4488,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsonc-eslint-parser@npm:2.1.0, jsonc-eslint-parser@npm:^2.0.4":
+"jsonc-eslint-parser@npm:2.2.0":
+  version: 2.2.0
+  resolution: "jsonc-eslint-parser@npm:2.2.0"
+  dependencies:
+    acorn: ^8.5.0
+    eslint-visitor-keys: ^3.0.0
+    espree: ^9.0.0
+    semver: ^7.3.5
+  checksum: aac6509850ba8a893956e00d862d488de9c7f32a352d612f361f43635b3a3426c2ed8b457bdef8188d4ea210b2d7ebcab225caef2d445a92c30cb9be7bb9b8ef
+  languageName: node
+  linkType: hard
+
+"jsonc-eslint-parser@npm:^2.0.4":
   version: 2.1.0
   resolution: "jsonc-eslint-parser@npm:2.1.0"
   dependencies:
@@ -5120,7 +5132,7 @@ __metadata:
     "@emotion/styled": 11.10.6
     "@fontsource/outfit": 4.5.11
     "@iconify/react": 4.1.0
-    "@re-taro/eslint-config": 1.6.1
+    "@re-taro/eslint-config": 1.6.2
     "@types/lodash-es": 4.17.6
     "@types/node": 18.15.0
     "@types/react": 18.0.28
@@ -6615,7 +6627,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yaml-eslint-parser@npm:1.1.0, yaml-eslint-parser@npm:^1.1.0":
+"yaml-eslint-parser@npm:1.2.0":
+  version: 1.2.0
+  resolution: "yaml-eslint-parser@npm:1.2.0"
+  dependencies:
+    eslint-visitor-keys: ^3.0.0
+    lodash: ^4.17.21
+    yaml: ^2.0.0
+  checksum: 2e8a84b639991bdd0e4ad9984d96f3b6ae0d39852aa06e4fc594f5bfa2e68a64d7f8f07086e781bb6198310f8df7246354473d70dd294a07358a1d551a5ae9ee
+  languageName: node
+  linkType: hard
+
+"yaml-eslint-parser@npm:^1.1.0":
   version: 1.1.0
   resolution: "yaml-eslint-parser@npm:1.1.0"
   dependencies:
