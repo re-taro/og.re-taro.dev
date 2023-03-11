@@ -17,10 +17,10 @@ export default async function handler(req: NextRequest) {
     const domain = searchParams.has('domain') ? `${searchParams.get('domain')?.slice(0, 64)}` : 're-taro.dev';
     const [notoSans, robotoMono] = await Promise.all([
       fetch(
-        new URL('../../assets/fonts/NotoSansJp-Bold.otf', import.meta.url),
+        new URL('../../assets/fonts/NotoSansJp-Bold.woff', import.meta.url),
       ).then(res => res.arrayBuffer()),
       fetch(
-        new URL('../../assets/fonts/RobotoMono-Medium.ttf', import.meta.url),
+        new URL('../../assets/fonts/RobotoMono-Medium.woff', import.meta.url),
       ).then(res => res.arrayBuffer()),
     ]);
     const icon = new URL(
