@@ -49,9 +49,7 @@ class Document extends NextDocument {
           <title>OGP server for Rintaro</title>
         </Head>
         <body>
-          <ColorModeScript
-            initialColorMode="system"
-          />
+          <ColorModeScript initialColorMode="system" />
           <Main />
           <NextScript />
         </body>

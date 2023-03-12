@@ -5,6 +5,6 @@ import type { HTMLMotionProps } from 'framer-motion';
 import type { FC } from 'react';
 import type { Merge } from '@/types/merge';
 
-type MotionBoxProps = Merge<HTMLChakraProps<'div'>, HTMLMotionProps<'div'>>
+type MotionBoxProps = Merge<HTMLChakraProps<'div'>, HTMLMotionProps<'div'>>;
 
 export const Box: FC<MotionBoxProps> = motion(chakra.div);
