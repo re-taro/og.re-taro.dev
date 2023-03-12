@@ -15,12 +15,9 @@ export default async function handler(req: NextRequest) {
       ? `📅 ― ${searchParams.get('date')?.slice(0, 16)}`
       : '';
     const domain = searchParams.has('domain') ? `${searchParams.get('domain')?.slice(0, 64)}` : 're-taro.dev';
-    const [notoSans, robotoMono] = await Promise.all([
+    const [jbMono] = await Promise.all([
       fetch(
-        new URL('../../assets/fonts/NotoSansJp-Bold.woff', import.meta.url),
-      ).then(res => res.arrayBuffer()),
-      fetch(
-        new URL('../../assets/fonts/RobotoMono-Medium.woff', import.meta.url),
+        new URL('../../assets/fonts/JetBrains/JetBrainsMono-Medium.woff', import.meta.url),
       ).then(res => res.arrayBuffer()),
     ]);
     const icon = new URL(
@@ -33,19 +30,14 @@ export default async function handler(req: NextRequest) {
       domain,
       icon,
     };
+
     return new ImageResponse(<Card {...info} />, {
       width: 1200,
       height: 630,
       fonts: [
         {
-          name: 'NotoSansJP',
-          data: notoSans,
-          weight: 700,
-          style: 'normal',
-        },
-        {
-          name: 'RobotoMono',
-          data: robotoMono,
+          name: 'JetBrainsMono',
+          data: jbMono,
           weight: 500,
           style: 'normal',
         },
