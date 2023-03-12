@@ -40,7 +40,7 @@ export const Card: FC<CardProps> = ({ title, date, domain, icon }) => (
           <h2
             tw="text-4xl mr-5"
             style={{
-              fontFamily: 'RobotoMono',
+              fontFamily: 'JetBrainsMono',
             }}
           >
             {domain}
