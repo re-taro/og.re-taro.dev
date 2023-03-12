@@ -1,5 +1,6 @@
 import { ImageResponse } from '@vercel/og';
 import { Card } from '@/components/card';
+import { jbMonoMedium } from '@/utils/font/jb-mono';
 import type { NextRequest } from 'next/server';
 import type { CardProps } from '@/components/card';
 
@@ -14,15 +15,14 @@ export default async function handler(req: NextRequest) {
     const date = searchParams.has('date')
       ? `📅 ― ${searchParams.get('date')?.slice(0, 16)}`
       : '';
-    const domain = searchParams.has('domain') ? `${searchParams.get('domain')?.slice(0, 64)}` : 're-taro.dev';
-    const [jbMono] = await Promise.all([
-      fetch(
-        new URL('../../assets/fonts/JetBrainsMono/JetBrainsMono-Medium.woff', import.meta.url),
-      ).then(res => res.arrayBuffer()),
-    ]);
+    const domain = searchParams.has('domain')
+      ? `${searchParams.get('domain')?.slice(0, 64)}`
+      : 're-taro.dev';
+    const jbMono = await jbMonoMedium;
     const icon = new URL(
-      '../../assets/rintaro.jpg',
-      import.meta.url,
+      '/assets/rintaro.jpg',
+      // eslint-disable-next-line dot-notation
+      process.env['NEXT_PUBLIC_BASE_URL'],
     ).toString();
     const info: CardProps = {
       title,
