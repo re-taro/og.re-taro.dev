@@ -17,7 +17,7 @@ export default async function handler(req: NextRequest) {
     const domain = searchParams.has('domain') ? `${searchParams.get('domain')?.slice(0, 64)}` : 're-taro.dev';
     const [jbMono] = await Promise.all([
       fetch(
-        new URL('../../assets/fonts/JetBrains/JetBrainsMono-Medium.woff', import.meta.url),
+        new URL('../../assets/fonts/JetBrainsMono/JetBrainsMono-Medium.woff', import.meta.url),
       ).then(res => res.arrayBuffer()),
     ]);
     const icon = new URL(
