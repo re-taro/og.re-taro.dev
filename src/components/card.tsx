@@ -17,15 +17,15 @@ export const Card: FC<CardProps> = ({ title, date, domain, icon }) => (
       alignItems: 'center',
       justifyContent: 'center',
       padding: '30px',
-      fontFamily: 'NotoSansJP',
+      fontFamily: 'JetBrainsMono',
       backgroundColor: '#2E3440',
       color: '#E5E9F0',
     }}
   >
     <div tw="flex flex-col p-12 w-full h-full border-solid border-4 border-white rounded-xl">
       <div tw="flex flex-1 max-w-full items-center max-h-full">
-        <h1 tw="text-6xl leading-tight max-w-full">
-          <p tw="w-full justify-center">{title}</p>
+        <h1 tw="text-6xl leading-tight max-w-full w-full justify-center">
+          {title}
         </h1>
       </div>
       <div tw="flex flex-row justify-between items-center w-full">
@@ -38,20 +38,10 @@ export const Card: FC<CardProps> = ({ title, date, domain, icon }) => (
             height={100}
             tw="rounded-full mr-5"
           />
-          <h2 tw="text-4xl mr-5">
-            <p
-              style={{
-                fontFamily: 'RobotoMono',
-              }}
-            >
-              {domain}
-            </p>
-          </h2>
+          <h2 tw="text-4xl mr-5">{domain}</h2>
         </div>
         <div tw="flex">
-          <h2 tw="text-4xl">
-            <p>{date}</p>
-          </h2>
+          <h2 tw="text-4xl">{date}</h2>
         </div>
       </div>
     </div>

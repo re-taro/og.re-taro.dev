@@ -7,7 +7,15 @@ export const ThemeToggle: FC = () => {
   return (
     <IconButton
       aria-label="theme toggle"
-      icon={colorMode === 'light' ? <Icon icon="ri:moon-fill" /> : <Icon icon="ri:sun-fill" />}
+      icon={
+        colorMode === 'light'
+          ? (
+            <Icon icon="ri:moon-fill" />
+            )
+          : (
+            <Icon icon="ri:sun-fill" />
+            )
+      }
       onClick={toggleColorMode}
     />
   );

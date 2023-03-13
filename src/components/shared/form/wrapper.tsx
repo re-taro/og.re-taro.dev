@@ -17,7 +17,7 @@ export type WrapperProps = {
   errorText?: FormErrorMessageProps['children']
   helperText?: FormHelperTextProps['children']
   children?: ReactNode
-} & Pick<FormControlProps, 'isInvalid' | 'isRequired'>
+} & Pick<FormControlProps, 'isInvalid' | 'isRequired'>;
 
 export const Wrapper: FC<WrapperProps> = ({
   label,

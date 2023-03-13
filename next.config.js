@@ -3,7 +3,7 @@ const config = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['ogp.re-taro.dev'],
+    domains: ["ogp.re-taro.dev"],
   },
 };
 

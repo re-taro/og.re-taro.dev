@@ -6,4 +6,4 @@ export interface OgImageOption {
 
 export type OgImageOptionConverted = {
   [key in keyof OgImageOption]?: string;
-}
+};

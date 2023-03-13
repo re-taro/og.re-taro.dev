@@ -13,6 +13,7 @@ import type { NextPage } from 'next';
 
 const Page404: NextPage = () => {
   const { colorMode } = useColorMode();
+
   return (
     <>
       <Box

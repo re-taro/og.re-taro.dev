@@ -30,6 +30,7 @@ const Generate: NextPage = () => {
       position: 'top',
     });
   };
+
   return (
     <Stack spacing={8} minHeight="70vh" justifyContent="center">
       <Heading size="xl" color="teal">
