@@ -3647,9 +3647,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:10.3.1":
-  version: 10.3.1
-  resolution: "framer-motion@npm:10.3.1"
+"framer-motion@npm:10.3.2":
+  version: 10.3.2
+  resolution: "framer-motion@npm:10.3.2"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.2
     tslib: ^2.4.0
@@ -3664,7 +3664,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: e34fafd71ff90dcf03cd234b9fd286db43910f96ecc409622a0a5f3e40dd5b10fdfaea9ad8d0eec83b800c7e5c0a712aa57617df2c762baa96086218e7f19ae2
+  checksum: 701c57bbeeb543f5351eecb4bf9cba82347c07a6599ab9b8547592f593abd5bdd7ee22265b3b98558eef4d61c90e9bc567785677a7765941c9e50bd46be6e425
   languageName: node
   linkType: hard
 
@@ -5185,7 +5185,7 @@ __metadata:
     "@types/react-dom": 18.0.11
     "@vercel/og": 0.4.0
     eslint: 8.36.0
-    framer-motion: 10.3.1
+    framer-motion: 10.3.2
     lodash-es: 4.17.21
     next: 13.2.4
     prettier: 2.8.4
