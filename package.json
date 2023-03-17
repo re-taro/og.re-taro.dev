@@ -24,7 +24,7 @@
     "fmt": "prettier --write ."
   },
   "dependencies": {
-    "@chakra-ui/react": "2.5.1",
+    "@chakra-ui/react": "2.5.2",
     "@emotion/react": "11.10.6",
     "@emotion/styled": "11.10.6",
     "@fontsource/outfit": "4.5.11",
