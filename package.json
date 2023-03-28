@@ -29,7 +29,7 @@
     "@emotion/styled": "11.10.6",
     "@fontsource/outfit": "4.5.11",
     "@iconify/react": "4.1.0",
-    "@vercel/og": "0.4.1",
+    "@vercel/og": "0.4.2",
     "framer-motion": "10.9.2",
     "lodash-es": "4.17.21",
     "next": "13.2.4",
