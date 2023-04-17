@@ -1663,20 +1663,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@re-taro/eslint-config@npm:1.6.9":
-  version: 1.6.9
-  resolution: "@re-taro/eslint-config@npm:1.6.9"
+"@re-taro/eslint-config@npm:1.6.10":
+  version: 1.6.10
+  resolution: "@re-taro/eslint-config@npm:1.6.10"
   dependencies:
-    "@re-taro/eslint-plugin": 1.6.9
+    "@re-taro/eslint-plugin": 1.6.10
   peerDependencies:
     eslint: ^8.0.0
-  checksum: 5677391a423a34146b56ac18051ccd847410184dd7c979d2c7fccdca870d74f71bc616afdf40a2e69afecd18db2fa84f9119f7366c420f389ac7e2a82aebfbcb
+  checksum: 7c72e02061e558703c071fa0372d36002c499bec3ec948b1aff48c5a3ca6c65b846acaf88e09195d51c9c5f9f12cefe6b7d790c3d78bee65a0bcd9ebb3cb4885
   languageName: node
   linkType: hard
 
-"@re-taro/eslint-plugin@npm:1.6.9":
-  version: 1.6.9
-  resolution: "@re-taro/eslint-plugin@npm:1.6.9"
+"@re-taro/eslint-plugin@npm:1.6.10":
+  version: 1.6.10
+  resolution: "@re-taro/eslint-plugin@npm:1.6.10"
   dependencies:
     "@next/eslint-plugin-next": 13.3.0
     "@typescript-eslint/eslint-plugin": 5.58.0
@@ -1695,13 +1695,13 @@ __metadata:
     eslint-plugin-react-hooks: 4.6.0
     eslint-plugin-redos: 4.5.0-beta.3
     eslint-plugin-unicorn: 46.0.0
-    eslint-plugin-vue: 9.10.0
+    eslint-plugin-vue: 9.11.0
     eslint-plugin-yml: 1.5.0
     jsonc-eslint-parser: 2.2.0
     yaml-eslint-parser: 1.2.0
   peerDependencies:
     eslint: ^8.0.0
-  checksum: 4122ff4ff0e69b0df751a40e4815c5cc688f67a0457d5f3de19bb6eab8f5afae32c200ed3d4c01bd5230dfb3cce33869db2fee1e1b369448ad868bb0c32d8986
+  checksum: b2cf7d81247196642137eb8e07708d550e63087819856338b4900745f4f6dd1d775224e667512269759c51556bdde016eb7ef26c166241c8f181ea79bfe1a596
   languageName: node
   linkType: hard
 
@@ -3291,9 +3291,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:9.10.0":
-  version: 9.10.0
-  resolution: "eslint-plugin-vue@npm:9.10.0"
+"eslint-plugin-vue@npm:9.11.0":
+  version: 9.11.0
+  resolution: "eslint-plugin-vue@npm:9.11.0"
   dependencies:
     "@eslint-community/eslint-utils": ^4.3.0
     natural-compare: ^1.4.0
@@ -3304,7 +3304,7 @@ __metadata:
     xml-name-validator: ^4.0.0
   peerDependencies:
     eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
-  checksum: 91c6f1ab59433cfa3ade0e6003ca4a9f3ee50e1fd6b49ad9487805dc582f1865ef27796ff18b89e92f37f9ed39d7bfb8c8ccd029c2b77bb3e26ce9b705713070
+  checksum: 1bcb6cf76831419dbb18b9ef7a71831b69325eab1f83137af7a7ffe2800962af2afae30d5eb94210597e70e9503b698d31af210f0d36c0b3fd9cafc77d2a1895
   languageName: node
   linkType: hard
 
@@ -5167,7 +5167,7 @@ __metadata:
     "@emotion/styled": 11.10.6
     "@fontsource/outfit": 4.5.11
     "@iconify/react": 4.1.0
-    "@re-taro/eslint-config": 1.6.9
+    "@re-taro/eslint-config": 1.6.10
     "@types/lodash-es": 4.17.7
     "@types/node": 18.15.11
     "@types/react": 18.0.35
