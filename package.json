@@ -39,7 +39,7 @@
     "sharp": "0.32.0"
   },
   "devDependencies": {
-    "@re-taro/eslint-config": "1.6.11",
+    "@re-taro/eslint-config": "1.8.1",
     "@types/lodash-es": "4.17.7",
     "@types/node": "18.15.11",
     "@types/react": "18.0.37",
