@@ -42,7 +42,7 @@
     "@re-taro/eslint-config": "1.8.1",
     "@types/lodash-es": "4.17.7",
     "@types/node": "18.15.13",
-    "@types/react": "18.0.37",
+    "@types/react": "18.0.38",
     "@types/react-dom": "18.0.11",
     "eslint": "8.38.0",
     "prettier": "2.8.7",
