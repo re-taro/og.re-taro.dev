@@ -1459,10 +1459,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/outfit@npm:5.0.0":
-  version: 5.0.0
-  resolution: "@fontsource/outfit@npm:5.0.0"
-  checksum: 5fa9757310996c2226f3594ae6a11d8b146745af94e5d5c9bf48b17b6e148f599ebf2167751bd4d6c5c87672bb414db37a632e3a1698c0a44adc1c8f15b5f308
+"@fontsource/outfit@npm:5.0.1":
+  version: 5.0.1
+  resolution: "@fontsource/outfit@npm:5.0.1"
+  checksum: a696467e603490cfce3f8061ffcdf003d6fd1b521ccb6e54c89f38ab41f96d489393d2fbbd8d10808a20481ce73a632b10bd95e20647be5bdf179fb2b5afc4fd
   languageName: node
   linkType: hard
 
@@ -5205,7 +5205,7 @@ __metadata:
     "@chakra-ui/react": 2.5.4
     "@emotion/react": 11.11.0
     "@emotion/styled": 11.11.0
-    "@fontsource/outfit": 5.0.0
+    "@fontsource/outfit": 5.0.1
     "@iconify/react": 4.1.0
     "@re-taro/eslint-config": 1.8.3
     "@types/lodash-es": 4.17.7
