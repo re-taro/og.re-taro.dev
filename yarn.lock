@@ -1991,14 +1991,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/og@npm:0.5.4":
-  version: 0.5.4
-  resolution: "@vercel/og@npm:0.5.4"
+"@vercel/og@npm:0.5.6":
+  version: 0.5.6
+  resolution: "@vercel/og@npm:0.5.6"
   dependencies:
     "@resvg/resvg-wasm": 2.4.1
-    satori: 0.7.2
+    satori: 0.9.1
     yoga-wasm-web: 0.3.3
-  checksum: e66b43da7c56cb3f0a7cc22fa2bf7e9fde53822b875aa4513bfc414c9f382ee6bedfaf26f922827618fdf2e7afcccf42e1d1487c4bfebb4bec94d8bf856559f8
+  checksum: ea6e01b3d45cd6733cdd8133288f15cb5aa77c1cd96a2e899b40cfecba329e3490f5f81087db64e3ded5027198651a3da5d1582f0278ffdd001034b2a59e6960
   languageName: node
   linkType: hard
 
@@ -5212,7 +5212,7 @@ __metadata:
     "@types/node": 18.16.14
     "@types/react": 18.2.2
     "@types/react-dom": 18.2.4
-    "@vercel/og": 0.5.4
+    "@vercel/og": 0.5.6
     eslint: 8.41.0
     framer-motion: 10.12.14
     lodash-es: 4.17.21
@@ -5936,9 +5936,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"satori@npm:0.7.2":
-  version: 0.7.2
-  resolution: "satori@npm:0.7.2"
+"satori@npm:0.9.1":
+  version: 0.9.1
+  resolution: "satori@npm:0.9.1"
   dependencies:
     "@shuding/opentype.js": 1.4.0-beta.0
     css-background-parser: ^0.1.0
@@ -5949,7 +5949,7 @@ __metadata:
     parse-css-color: ^0.2.1
     postcss-value-parser: ^4.2.0
     yoga-wasm-web: ^0.3.3
-  checksum: bb624f7b3257a66d17a6ea096866eb52605c6c7b1861a8decf96c032140cc2d0afc3462373072263e83f8a4a844184340b767fdf85601a9a3b78811e3ff70023
+  checksum: 1b00705a3f0a0d24b18188a856d7d047dd7b8611fc6a426ece339aa1d7f771e85d0b17aa1fdb0b5e42c5aec7c198a41c7906f4829ed7a97f2ee34fc107184b1d
   languageName: node
   linkType: hard
 
