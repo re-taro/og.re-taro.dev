@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['plugin:@re-taro/next'],
+  extends: ['@re-taro'],
 };
