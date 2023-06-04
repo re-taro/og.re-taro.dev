@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@resvg/resvg-wasm": "2.4.1",
-    "hono": "3.2.3",
+    "hono": "3.2.4",
     "react": "18.2.0",
     "satori": "0.9.1",
     "yoga-wasm-web": "0.3.3"
