@@ -3,7 +3,7 @@ import { etag } from 'hono/etag';
 import { cache } from 'hono/cache';
 import { Card } from './card';
 import { generateImage } from './image';
-import { loadEmoji, getIconCode } from './emoji';
+import { getIconCode, loadEmoji } from './emoji';
 
 type Bindings = {
   BUCKET: R2Bucket;
@@ -107,10 +107,9 @@ app.get('/', async (c) => {
     ],
     async (code, text) => {
       if (code === 'emoji') {
-        return (
-          `data:image/svg+xml;base64,` +
-          btoa(await loadEmoji(getIconCode(text)))
-        );
+        return `data:image/svg+xml;base64,${btoa(
+          await loadEmoji(getIconCode(text)),
+        )}`;
       }
 
       return [];
