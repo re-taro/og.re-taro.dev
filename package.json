@@ -19,8 +19,7 @@
     "start": "wrangler dev",
     "lint": "eslint . --ext .cjs,.ts,.tsx ",
     "lint:fix": "eslint . --ext .cjs,.ts,.tsx --fix",
-    "fmt": "prettier --write .",
-    "test": "vitest"
+    "fmt": "prettier --write ."
   },
   "dependencies": {
     "@resvg/resvg-wasm": "2.4.1",
