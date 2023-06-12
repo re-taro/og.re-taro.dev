@@ -14,14 +14,12 @@ jobs:
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
     steps:
-      - uses: actions/checkout@v3.5.3
-        with:
-          fetch-depth: 0
       - id: release
         uses: google-github-actions/release-please-action@v3.7.9
         with:
           release-type: node
           include-v-in-tag: false
+          last-release-sha: 094610d10d90b81ea1bbc7d24959327fb7c94d11
   deploy:
     needs: release-please
     if: ${{ needs.release-please.outputs.release_created }}
@@ -33,7 +31,7 @@ jobs:
         with:
           node-version-file: .tool-versions
       - name: Publish to Cloudflare Workers
-        run: pnpm deploy
+        run: pnpm run deploy
         shell: sh
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
