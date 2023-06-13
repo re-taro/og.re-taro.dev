@@ -13,7 +13,6 @@ const app = new Hono<{ Bindings: Bindings }>();
 
 let notoSansBuf: null | ArrayBuffer = null;
 let jbMonoBuf: null | ArrayBuffer = null;
-let iconKey: null | string = null;
 
 app.use(
   '/',
@@ -78,17 +77,8 @@ app.get('/', async (c) => {
     }
     jbMonoBuf = await fontObj.arrayBuffer();
   }
-  if (iconKey === null) {
-    const iconObj = await c.env.BUCKET.get('assets/rintaro.jpg');
-    if (iconObj === null || typeof iconObj === 'undefined') {
-      return c.text('Failed to get icon', 500, {
-        'Content-Type': 'text/plain',
-      });
-    }
-    iconKey = iconObj.key;
-  }
   const image = await generateImage(
-    <Card title={title} date={date} domain={domain} icon={iconKey} />,
+    <Card title={title} date={date} domain={domain} />,
     1200,
     630,
     [

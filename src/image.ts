@@ -3,6 +3,7 @@ import initYoga from 'yoga-wasm-web';
 import { Resvg, initWasm as initResvg } from '@resvg/resvg-wasm';
 import wasmYoga from '../node_modules/yoga-wasm-web/dist/yoga.wasm';
 import wasmResvg from '../node_modules/@resvg/resvg-wasm/index_bg.wasm';
+import { withCache } from './utils';
 import type { ReactNode } from 'react';
 
 const yoga = await initYoga(wasmYoga);
@@ -33,7 +34,7 @@ export async function generateImage(
     width,
     height,
     fonts,
-    loadAdditionalAsset,
+    loadAdditionalAsset: withCache(loadAdditionalAsset),
   });
   const png = new Resvg(svg).render().asPng();
 
