@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.1](https://github.com/re-taro/ogp.re-taro.dev/compare/2.3.0...2.3.1) (2023-06-13)
+
+
+### Bug Fixes
+
+* fix bug of missed icon on ogp ([d6465fe](https://github.com/re-taro/ogp.re-taro.dev/commit/d6465fe803b06234dd84e9018994dcb7e366336f))
+
 ## [2.3.0](https://github.com/re-taro/ogp.re-taro.dev/compare/2.2.10...2.3.0) (2023-06-11)
 
 
