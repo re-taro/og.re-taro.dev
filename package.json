@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "4.20230518.0",
-    "@re-taro/eslint-config": "1.9.13",
+    "@re-taro/eslint-config": "1.9.14",
     "@types/react": "18.2.14",
     "eslint": "8.44.0",
     "prettier": "2.8.8",
