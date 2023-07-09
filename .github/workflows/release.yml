@@ -19,7 +19,6 @@ jobs:
         with:
           release-type: node
           include-v-in-tag: false
-          last-release-sha: 094610d10d90b81ea1bbc7d24959327fb7c94d11
   deploy:
     needs: release-please
     if: ${{ needs.release-please.outputs.release_created }}

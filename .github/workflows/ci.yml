@@ -1,0 +1,37 @@
+name: Main Workflow
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.5.3
+      - name: Setup Node.js
+        uses: re-taro/actions/setup-node@v1.1.0
+        with:
+          node-version-file: .tool-versions
+      - name: Use turborepo cache
+        uses: re-taro/actions/turbo-cache@v1.1.0
+      - name: Build test
+        run: pnpm build
+        shell: sh
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.5.3
+      - name: Setup Node.js
+        uses: re-taro/actions/setup-node@v1.1.0
+        with:
+          node-version-file: .tool-versions
+      - name: Use turborepo cache
+        uses: re-taro/actions/turbo-cache@v1.1.0
+      - name: Lint test
+        run: pnpm lint
+        shell: sh
