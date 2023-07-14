@@ -32,7 +32,7 @@
     "@cloudflare/workers-types": "4.20230710.1",
     "@re-taro/eslint-config": "1.9.16",
     "@types/react": "18.2.15",
-    "eslint": "8.44.0",
+    "eslint": "8.45.0",
     "prettier": "3.0.0",
     "typescript": "5.1.6",
     "wrangler": "3.2.0"
