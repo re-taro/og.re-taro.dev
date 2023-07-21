@@ -29,7 +29,7 @@
     "yoga-wasm-web": "0.3.3"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20230717.0",
+    "@cloudflare/workers-types": "4.20230717.1",
     "@re-taro/eslint-config": "1.9.18",
     "@types/react": "18.2.15",
     "eslint": "8.45.0",
