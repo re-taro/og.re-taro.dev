@@ -23,8 +23,8 @@ dependencies:
 
 devDependencies:
   '@cloudflare/workers-types':
-    specifier: 4.20230717.1
-    version: 4.20230717.1
+    specifier: 4.20230724.0
+    version: 4.20230724.0
   '@re-taro/eslint-config':
     specifier: 1.9.19
     version: 1.9.19(eslint@8.45.0)(svelte@3.59.1)(typescript@5.1.6)
@@ -130,8 +130,8 @@ packages:
     dev: true
     optional: true
 
-  /@cloudflare/workers-types@4.20230717.1:
-    resolution: {integrity: sha512-JmtYqsn/rc0gq83rlgItGsh/aJsTQh6ebJTDbq794kGOH7ym6MlpLtbCJj/Qz+hCPgdqoHDOLTlQQguARLi78A==}
+  /@cloudflare/workers-types@4.20230724.0:
+    resolution: {integrity: sha512-WuFlsai21oJhRMBHdkM0saIuK1Faitp/GXWj31Zlbe3cCtPNlwYtX5WkojDNWWAxX47LMHBF9wv7wrytNLabYA==}
     dev: true
 
   /@esbuild-plugins/node-globals-polyfill@0.1.1(esbuild@0.16.3):
