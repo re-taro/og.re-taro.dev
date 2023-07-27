@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.8](https://github.com/re-taro/ogp.re-taro.dev/compare/2.3.7...2.3.8) (2023-07-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency hono to v3.3.4 ([822bfd4](https://github.com/re-taro/ogp.re-taro.dev/commit/822bfd493a1441aee40c02f14e8b9eb4ac7f49bc))
+
 ## [2.3.7](https://github.com/re-taro/ogp.re-taro.dev/compare/2.3.6...2.3.7) (2023-07-24)
 
 
