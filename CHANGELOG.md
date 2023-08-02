@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.9](https://github.com/re-taro/ogp.re-taro.dev/compare/2.3.8...2.3.9) (2023-08-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency satori to v0.10.2 ([3ae5342](https://github.com/re-taro/ogp.re-taro.dev/commit/3ae5342ef0a514831d1cc94994c01049d101b95e))
+
 ## [2.3.8](https://github.com/re-taro/ogp.re-taro.dev/compare/2.3.7...2.3.8) (2023-07-27)
 
 
