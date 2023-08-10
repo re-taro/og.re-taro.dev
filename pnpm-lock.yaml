@@ -26,8 +26,8 @@ devDependencies:
     specifier: 4.20230807.0
     version: 4.20230807.0
   '@re-taro/eslint-config':
-    specifier: 1.9.27
-    version: 1.9.27(eslint@8.46.0)(svelte@3.59.1)(typescript@5.1.6)
+    specifier: 1.10.0
+    version: 1.10.0(eslint@8.46.0)(svelte@3.59.1)(typescript@5.1.6)
   '@types/react':
     specifier: 18.2.20
     version: 18.2.20
@@ -439,19 +439,19 @@ packages:
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     dependencies:
       cross-spawn: 7.0.3
-      fast-glob: 3.2.12
+      fast-glob: 3.3.1
       is-glob: 4.0.3
       open: 9.1.0
       picocolors: 1.0.0
       tslib: 2.5.0
     dev: true
 
-  /@re-taro/eslint-config@1.9.27(eslint@8.46.0)(svelte@3.59.1)(typescript@5.1.6):
-    resolution: {integrity: sha512-oRL+rbx6pBJhxLsGs7j+IT6eT/r7uTiuqNYOMg1kkKxBDi2cm2Fxt4dVPk3NfqqPKpiYMn1CJW41DfmtoTQPbA==}
+  /@re-taro/eslint-config@1.10.0(eslint@8.46.0)(svelte@3.59.1)(typescript@5.1.6):
+    resolution: {integrity: sha512-uAKufrJd0ZNzzIm59A8XI3DEnDPLCssghV3V2MqPsZIy6qxPUJBEQjkh3G9bT18pV1bfoT08o3tf0n/lizaz8w==}
     peerDependencies:
       eslint: ^8.0.0
     dependencies:
-      '@re-taro/eslint-plugin': 1.9.27(eslint@8.46.0)(svelte@3.59.1)(typescript@5.1.6)
+      '@re-taro/eslint-plugin': 1.10.0(eslint@8.46.0)(svelte@3.59.1)(typescript@5.1.6)
       eslint: 8.46.0
       eslint-config-prettier: 9.0.0(eslint@8.46.0)
     transitivePeerDependencies:
@@ -462,8 +462,8 @@ packages:
       - typescript
     dev: true
 
-  /@re-taro/eslint-plugin@1.9.27(eslint@8.46.0)(svelte@3.59.1)(typescript@5.1.6):
-    resolution: {integrity: sha512-jHUksXfaZQLscwzVcgwnJoOvkhzX42VE67FzUmjWNsbsNZSNbFthGp1b24wIH7qXQWu61xJ+rG+8v6ZLl0JThg==}
+  /@re-taro/eslint-plugin@1.10.0(eslint@8.46.0)(svelte@3.59.1)(typescript@5.1.6):
+    resolution: {integrity: sha512-0dCAkK6nAvT/ZwuPfNHm9RC2pkq3wMyOsb/F4rhdXBj+5X7jGzzxX5zuO+5x/cJCWhJDrpRXtxZSwyhCEXDgnA==}
     peerDependencies:
       eslint: ^8.0.0
     dependencies:
@@ -471,6 +471,7 @@ packages:
       '@typescript-eslint/eslint-plugin': 6.3.0(@typescript-eslint/parser@6.3.0)(eslint@8.46.0)(typescript@5.1.6)
       '@typescript-eslint/parser': 6.3.0(eslint@8.46.0)(typescript@5.1.6)
       eslint: 8.46.0
+      eslint-config-prettier: 9.0.0(eslint@8.46.0)
       eslint-config-standard: 17.1.0(eslint-plugin-import@2.28.0)(eslint-plugin-n@16.0.1)(eslint-plugin-promise@6.1.1)(eslint@8.46.0)
       eslint-import-resolver-typescript: 3.6.0(@typescript-eslint/parser@6.3.0)(eslint-plugin-import@2.28.0)(eslint@8.46.0)
       eslint-plugin-eslint-comments: 3.2.0(eslint@8.46.0)
@@ -1890,17 +1891,6 @@ packages:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
     dev: true
 
-  /fast-glob@3.2.12:
-    resolution: {integrity: sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==}
-    engines: {node: '>=8.6.0'}
-    dependencies:
-      '@nodelib/fs.stat': 2.0.5
-      '@nodelib/fs.walk': 1.2.8
-      glob-parent: 5.1.2
-      merge2: 1.4.1
-      micromatch: 4.0.5
-    dev: true
-
   /fast-glob@3.3.1:
     resolution: {integrity: sha512-kNFPyjhh5cKjrUltxs+wFx+ZkbRaxxmZ+X0ZU31SOsxCEtP9VPgtq2teZw1DebupL5GmDaNQ6yKMMVcM41iqDg==}
     engines: {node: '>=8.6.0'}
@@ -2113,7 +2103,7 @@ packages:
     dependencies:
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.2.12
+      fast-glob: 3.3.1
       ignore: 5.2.4
       merge2: 1.4.1
       slash: 3.0.0
