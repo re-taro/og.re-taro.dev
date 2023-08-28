@@ -9,8 +9,8 @@ dependencies:
     specifier: 2.4.1
     version: 2.4.1
   hono:
-    specifier: 3.5.4
-    version: 3.5.4
+    specifier: 3.5.5
+    version: 3.5.5
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -2209,8 +2209,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /hono@3.5.4:
-    resolution: {integrity: sha512-GrRBIJhZ+tG+8RtoyPQjvqPGwppERmayyTiPKano4egmpkJf1XiptESUYK5vKHICNaJksAKB9jzy1CmOdQENPA==}
+  /hono@3.5.5:
+    resolution: {integrity: sha512-XDRLCLNWOWTtDhM86dTHSbhqgY4fbTscG2BiWwMcZ87yz8TneAXKMfQi22LPa7t7x8Eo459wMcibHd1aZtJkAA==}
     engines: {node: '>=16.0.0'}
     dev: false
 
