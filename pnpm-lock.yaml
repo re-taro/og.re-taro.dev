@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@resvg/resvg-wasm':
-    specifier: 2.4.1
-    version: 2.4.1
+    specifier: 2.5.0
+    version: 2.5.0
   hono:
     specifier: 3.7.6
     version: 3.7.6
@@ -499,8 +499,8 @@ packages:
       - typescript
     dev: true
 
-  /@resvg/resvg-wasm@2.4.1:
-    resolution: {integrity: sha512-yi6R0HyHtsoWTRA06Col4WoDs7SvlXU3DLMNP2bdAgs7HK18dTEVl1weXgxRzi8gwLteGUbIg29zulxIB3GSdg==}
+  /@resvg/resvg-wasm@2.5.0:
+    resolution: {integrity: sha512-jM0zG54ykoGFiMMVvRxzHFVXhxCdQTGp+okLCWGIXt8bN2GLlsWpjvyU0vZJWkTsd+qLmy2dmYcPU02zC0IVMQ==}
     engines: {node: '>= 10'}
     dev: false
 
