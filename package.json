@@ -22,7 +22,7 @@
     "fmt": "prettier --write ."
   },
   "dependencies": {
-    "@resvg/resvg-wasm": "2.5.0",
+    "@resvg/resvg-wasm": "2.6.0",
     "hono": "3.8.1",
     "react": "18.2.0",
     "satori": "0.10.9",
