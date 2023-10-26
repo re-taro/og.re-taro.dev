@@ -1,5 +1,40 @@
 # Changelog
 
+## [2.3.11](https://github.com/re-taro/ogp.re-taro.dev/compare/2.3.10...2.3.11) (2023-10-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @resvg/resvg-wasm to v2.5.0 ([3a15cc2](https://github.com/re-taro/ogp.re-taro.dev/commit/3a15cc2eb845221d4bd162e6c5aa5008772a93e1))
+* **deps:** update dependency @resvg/resvg-wasm to v2.6.0 ([6a30082](https://github.com/re-taro/ogp.re-taro.dev/commit/6a3008251b40349ab36f83ddc02616522441a5e2))
+* **deps:** update dependency hono to v3.4.3 ([ff2b394](https://github.com/re-taro/ogp.re-taro.dev/commit/ff2b394fb7220339caf4c7feddd78dbfbdb2e8a9))
+* **deps:** update dependency hono to v3.5.0 ([4b6fa58](https://github.com/re-taro/ogp.re-taro.dev/commit/4b6fa5808005c3ef70ca67e8ea10afc485ddc298))
+* **deps:** update dependency hono to v3.5.1 ([943b089](https://github.com/re-taro/ogp.re-taro.dev/commit/943b0890ca0fd708222c6948885fcc0189e645b4))
+* **deps:** update dependency hono to v3.5.4 ([7c25e18](https://github.com/re-taro/ogp.re-taro.dev/commit/7c25e1805fa0abc7df6a0eeba5563d8e4b7376f3))
+* **deps:** update dependency hono to v3.5.5 ([3889a42](https://github.com/re-taro/ogp.re-taro.dev/commit/3889a427e26a619b72639b5e9e2d1acf72db1c85))
+* **deps:** update dependency hono to v3.5.6 ([97615fc](https://github.com/re-taro/ogp.re-taro.dev/commit/97615fca80fd635261f26143b3900101a4403195))
+* **deps:** update dependency hono to v3.5.7 ([efea814](https://github.com/re-taro/ogp.re-taro.dev/commit/efea8141c901d6c85bfe73fa24da2cd4788b9318))
+* **deps:** update dependency hono to v3.5.8 ([d4cb010](https://github.com/re-taro/ogp.re-taro.dev/commit/d4cb010b24edd17ba94bbd407cd6590d904b0e45))
+* **deps:** update dependency hono to v3.6.0 ([1373a1e](https://github.com/re-taro/ogp.re-taro.dev/commit/1373a1e92fe533ce07fdc096453fd59958b57766))
+* **deps:** update dependency hono to v3.6.1 ([0a782ea](https://github.com/re-taro/ogp.re-taro.dev/commit/0a782eaa64e42369afd7ca38114946a503b62cb8))
+* **deps:** update dependency hono to v3.6.3 ([6f3de5c](https://github.com/re-taro/ogp.re-taro.dev/commit/6f3de5c3ed5abad97e3e0c798fac94b33ec2039d))
+* **deps:** update dependency hono to v3.7.0 ([ac13b90](https://github.com/re-taro/ogp.re-taro.dev/commit/ac13b90e13611fb10a08c3e3ca7524bb13a3763d))
+* **deps:** update dependency hono to v3.7.1 ([8517c07](https://github.com/re-taro/ogp.re-taro.dev/commit/8517c0770cb2fba4c5cb05f3f7a380ad0f842f54))
+* **deps:** update dependency hono to v3.7.2 ([a4f2b1d](https://github.com/re-taro/ogp.re-taro.dev/commit/a4f2b1dea7f3893fbfd5580236573458dc37cf5e))
+* **deps:** update dependency hono to v3.7.3 ([5aadc25](https://github.com/re-taro/ogp.re-taro.dev/commit/5aadc250e9ba5ddea7ca25214dbfe55b13ff9a3a))
+* **deps:** update dependency hono to v3.7.4 ([17966e6](https://github.com/re-taro/ogp.re-taro.dev/commit/17966e608e509b0f981cb0220a609986e103368f))
+* **deps:** update dependency hono to v3.7.5 ([d2c169a](https://github.com/re-taro/ogp.re-taro.dev/commit/d2c169ab756d6cbfe70e62a09c8bc1b9d39a44ab))
+* **deps:** update dependency hono to v3.7.6 ([d3b9658](https://github.com/re-taro/ogp.re-taro.dev/commit/d3b96585fd9d71dec2e33c0692d28939ab1e0153))
+* **deps:** update dependency hono to v3.8.0 ([64a20cb](https://github.com/re-taro/ogp.re-taro.dev/commit/64a20cb5199b47f3856dbef68b390cca6797b040))
+* **deps:** update dependency hono to v3.8.1 ([8245378](https://github.com/re-taro/ogp.re-taro.dev/commit/8245378ba4603a6858c2d769c390583d7b6f8299))
+* **deps:** update dependency hono to v3.8.2 ([13e33c6](https://github.com/re-taro/ogp.re-taro.dev/commit/13e33c60d25308adf23249898363c592302f18c9))
+* **deps:** update dependency hono to v3.8.3 ([5815a77](https://github.com/re-taro/ogp.re-taro.dev/commit/5815a777df544441ba548c7f0c6613d60e7e0e6e))
+* **deps:** update dependency satori to v0.10.4 ([f541c91](https://github.com/re-taro/ogp.re-taro.dev/commit/f541c9105ed86de8287e0392bd3888daa88ff491))
+* **deps:** update dependency satori to v0.10.6 ([591fea5](https://github.com/re-taro/ogp.re-taro.dev/commit/591fea56182b42957f57cfbefed88b6b411722c0))
+* **deps:** update dependency satori to v0.10.7 ([d925d38](https://github.com/re-taro/ogp.re-taro.dev/commit/d925d381a4dd6ffcdf87e8c8e27f0716e7a64dc2))
+* **deps:** update dependency satori to v0.10.8 ([4dd8275](https://github.com/re-taro/ogp.re-taro.dev/commit/4dd82752012fa24cd95103074372b59d46880cdd))
+* **deps:** update dependency satori to v0.10.9 ([36aeba9](https://github.com/re-taro/ogp.re-taro.dev/commit/36aeba98e01c22cde5f4ec4b14c594b96cc7ea11))
+
 ## [2.3.10](https://github.com/re-taro/ogp.re-taro.dev/compare/2.3.9...2.3.10) (2023-08-12)
 
 
