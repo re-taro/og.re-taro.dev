@@ -33,7 +33,7 @@ app.get('/', async (c) => {
   const cache = caches.default;
   const cachedRes = await cache.match(c.req.url);
   if (cachedRes) {
-    const etag = c.req.headers.get('If-None-Match');
+    const etag = c.req.raw.headers.get('If-None-Match');
     if (etag !== null && etag === cachedRes.headers.get('ETag')) {
       return new Response(null, {
         status: 304,
