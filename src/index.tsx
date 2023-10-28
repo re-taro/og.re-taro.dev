@@ -1,10 +1,12 @@
-import { Hono } from 'hono';
-import { etag } from 'hono/etag';
-import { cache } from 'hono/cache';
-import { Card } from './card';
-import { generateImage } from './image';
-import { getIconCode, loadEmoji } from './emoji';
+import { Hono } from "hono";
+import { cache } from "hono/cache";
+import { etag } from "hono/etag";
 
+import { Card } from "./card";
+import { getIconCode, loadEmoji } from "./emoji";
+import { generateImage } from "./image";
+
+// eslint-disable-next-line ts/consistent-type-definitions
 type Bindings = {
   BUCKET: R2Bucket;
 };
@@ -15,26 +17,24 @@ let notoSansBuf: null | ArrayBuffer = null;
 let jbMonoBuf: null | ArrayBuffer = null;
 
 app.use(
-  '/',
+  "/",
   etag(),
   cache({
-    cacheName: 'ogp',
-    cacheControl: 'public, max-age=604800',
+    cacheName: "ogp",
+    cacheControl: "public, max-age=604800",
   }),
 );
 
-app.get('/', async (c) => {
-  const title = c.req.query('title') ? (c.req.query('title') as string) : '';
-  const date = c.req.query('date') ? `📅 ― ${c.req.query('date')}` : '';
-  const domain = c.req.query('domain')
-    ? (c.req.query('domain') as string)
-    : 're-taro.dev';
+app.get("/", async (c) => {
+  const title = c.req.query("title") ? c.req.query("title")! : "";
+  const date = c.req.query("date") ? `📅 ― ${c.req.query("date")}` : "";
+  const domain = c.req.query("domain") ? c.req.query("domain")! : "re-taro.dev";
 
   const cache = caches.default;
   const cachedRes = await cache.match(c.req.url);
   if (cachedRes) {
-    const etag = c.req.raw.headers.get('If-None-Match');
-    if (etag !== null && etag === cachedRes.headers.get('ETag')) {
+    const etag = c.req.raw.headers.get("If-None-Match");
+    if (etag !== null && etag === cachedRes.headers.get("ETag")) {
       return new Response(null, {
         status: 304,
         headers: cachedRes.headers,
@@ -46,13 +46,13 @@ app.get('/', async (c) => {
 
   const key = `${title}-${date}-${domain}`;
   const cachedImage = await c.env.BUCKET.get(`cache/${key}.png`);
-  if (cachedImage !== null && typeof cachedImage !== 'undefined') {
+  if (cachedImage !== null && typeof cachedImage !== "undefined") {
     const res = new Response(cachedImage.body, {
       headers: {
-        'Cache-Control': 'public, max-age=604800',
+        "Cache-Control": "public, max-age=604800",
         ETag: `W/${cachedImage.httpEtag}`,
-        'Content-Type':
-          cachedImage.httpMetadata?.contentType ?? 'application/octet-stream',
+        "Content-Type":
+          cachedImage.httpMetadata?.contentType ?? "application/octet-stream",
       },
     });
 
@@ -60,19 +60,19 @@ app.get('/', async (c) => {
   }
 
   if (notoSansBuf === null) {
-    const fontObj = await c.env.BUCKET.get('fonts/NotoSansJP-Bold.ttf');
-    if (fontObj === null || typeof fontObj === 'undefined') {
-      return c.text('Failed to get font', 500, {
-        'Content-Type': 'text/plain',
+    const fontObj = await c.env.BUCKET.get("fonts/NotoSansJP-Bold.ttf");
+    if (fontObj === null || typeof fontObj === "undefined") {
+      return c.text("Failed to get font", 500, {
+        "Content-Type": "text/plain",
       });
     }
     notoSansBuf = await fontObj.arrayBuffer();
   }
   if (jbMonoBuf === null) {
-    const fontObj = await c.env.BUCKET.get('fonts/JetBrainsMono-Medium.ttf');
-    if (fontObj === null || typeof fontObj === 'undefined') {
-      return c.text('Failed to get font', 500, {
-        'Content-Type': 'text/plain',
+    const fontObj = await c.env.BUCKET.get("fonts/JetBrainsMono-Medium.ttf");
+    if (fontObj === null || typeof fontObj === "undefined") {
+      return c.text("Failed to get font", 500, {
+        "Content-Type": "text/plain",
       });
     }
     jbMonoBuf = await fontObj.arrayBuffer();
@@ -83,20 +83,20 @@ app.get('/', async (c) => {
     630,
     [
       {
-        name: 'NotoSansJP',
+        name: "NotoSansJP",
         data: notoSansBuf,
         weight: 700,
-        style: 'normal',
+        style: "normal",
       },
       {
-        name: 'JetBrainsMono',
+        name: "JetBrainsMono",
         data: jbMonoBuf,
         weight: 500,
-        style: 'normal',
+        style: "normal",
       },
     ],
     async (code, text) => {
-      if (code === 'emoji') {
+      if (code === "emoji") {
         return `data:image/svg+xml;base64,${btoa(
           await loadEmoji(getIconCode(text)),
         )}`;
@@ -109,8 +109,8 @@ app.get('/', async (c) => {
 
   return new Response(image, {
     headers: {
-      'Cache-Control': 'public, max-age=604800',
-      'Conetnt-Type': 'image/png',
+      "Cache-Control": "public, max-age=604800",
+      "Conetnt-Type": "image/png",
     },
   });
 });

@@ -2,7 +2,7 @@ const U200D = String.fromCharCode(8205);
 const UFE0Fg = /\uFE0F/g;
 const emojiCache: Record<string, Promise<string>> = {};
 
-const toCodePoint = (unicodeSurrogates: string) => {
+function toCodePoint(unicodeSurrogates: string) {
   const r = [];
   let c = 0;
   let p = 0;
@@ -11,26 +11,25 @@ const toCodePoint = (unicodeSurrogates: string) => {
   while (i < unicodeSurrogates.length) {
     c = unicodeSurrogates.charCodeAt(i++);
     if (p) {
-      r.push((65536 + ((p - 55296) << 10) + (c - 56320)).toString(16));
+      r.push((65_536 + ((p - 55_296) << 10) + (c - 56_320)).toString(16));
       p = 0;
-    } else if (c >= 55296 && c <= 56319) {
+    } else if (c >= 55_296 && c <= 56_319) {
       p = c;
     } else {
       r.push(c.toString(16));
     }
   }
 
-  return r.join('-');
-};
+  return r.join("-");
+}
 
-export const getIconCode = (char: string) => {
-  return toCodePoint(!char.includes(U200D) ? char.replace(UFE0Fg, '') : char);
-};
+export const getIconCode = (char: string) =>
+  toCodePoint(char.includes(U200D) ? char : char.replace(UFE0Fg, ""));
 
-export const loadEmoji = (code: string) => {
+export function loadEmoji(code: string) {
   if (code in emojiCache) return emojiCache[code];
 
   return (emojiCache[code] = fetch(
     `https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/${code.toLowerCase()}.svg`,
   ).then((r) => r.text()));
-};
+}
