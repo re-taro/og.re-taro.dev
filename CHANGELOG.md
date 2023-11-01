@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.4.0](https://github.com/re-taro/og.re-taro.dev/compare/2.3.12...2.4.0) (2023-11-01)
+
+
+### Features
+
+* **refactor:** rename project and assets folder ([#586](https://github.com/re-taro/og.re-taro.dev/issues/586)) ([db953b9](https://github.com/re-taro/og.re-taro.dev/commit/db953b96247ae5da4376b130c1ac6ec68380ffaa))
+
+
+### Bug Fixes
+
+* **deps:** update dependency hono to v3.9.1 ([#582](https://github.com/re-taro/og.re-taro.dev/issues/582)) ([b56ceb6](https://github.com/re-taro/og.re-taro.dev/commit/b56ceb6b0ada638abf01f38cd83a8f63d2d53808))
+
 ## [2.3.12](https://github.com/re-taro/og.re-taro.dev/compare/2.3.11...2.3.12) (2023-10-28)
 
 
