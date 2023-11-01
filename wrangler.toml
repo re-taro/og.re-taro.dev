@@ -1,8 +1,8 @@
-name = "ogp"
+name = "og"
 main = "src/index.tsx"
 compatibility_date = "2023-05-18"
 
 [[r2_buckets]]
 binding = "BUCKET"
-bucket_name = "ogp"
-preview_bucket_name = "ogp"
+bucket_name = "og-assets"
+preview_bucket_name = "og-assets-preview"
