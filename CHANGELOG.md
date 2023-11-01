@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.1](https://github.com/re-taro/og.re-taro.dev/compare/2.4.0...2.4.1) (2023-11-01)
+
+
+### Bug Fixes
+
+* **ci:** add account id to deploy flow ([#587](https://github.com/re-taro/og.re-taro.dev/issues/587)) ([08d2bfc](https://github.com/re-taro/og.re-taro.dev/commit/08d2bfc2f77b6391bc1117594f4d0daf13d3c367))
+
 ## [2.4.0](https://github.com/re-taro/og.re-taro.dev/compare/2.3.12...2.4.0) (2023-11-01)
 
 
