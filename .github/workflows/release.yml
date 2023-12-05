@@ -27,7 +27,6 @@ jobs:
         uses: google-github-actions/release-please-action@v4.0.0
         with:
           release-type: node
-          include-v-in-tag: false
           token: ${{ steps.bot.outputs.token }}
       - name: Revoke GitHub Apps token
         env:
