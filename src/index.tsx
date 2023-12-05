@@ -96,7 +96,7 @@ app.get("/", async (c) => {
       });
     }
     yogaBuf = await yogaObj.arrayBuffer();
-  };
+  }
   const image = await generateImage(
     <Card title={title} date={date} domain={domain} />,
     1200,
