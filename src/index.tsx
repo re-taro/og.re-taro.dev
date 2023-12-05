@@ -15,6 +15,8 @@ const app = new Hono<{ Bindings: Bindings }>();
 
 let notoSansBuf: null | ArrayBuffer = null;
 let jbMonoBuf: null | ArrayBuffer = null;
+let resvgBuf: null | ArrayBuffer = null;
+let yogaBuf: null | ArrayBuffer = null;
 
 app.use(
   "/",
@@ -77,6 +79,24 @@ app.get("/", async (c) => {
     }
     jbMonoBuf = await fontObj.arrayBuffer();
   }
+  if (resvgBuf === null) {
+    const resvgObj = await c.env.BUCKET.get("vendor/resvg@v2.6.0.wasm");
+    if (resvgObj === null || typeof resvgObj === "undefined") {
+      return c.text("Failed to get resvg", 500, {
+        "Content-Type": "text/plain",
+      });
+    }
+    resvgBuf = await resvgObj.arrayBuffer();
+  }
+  if (yogaBuf === null) {
+    const yogaObj = await c.env.BUCKET.get("vendor/yoga@v0.3.3.wasm");
+    if (yogaObj === null || typeof yogaObj === "undefined") {
+      return c.text("Failed to get yoga", 500, {
+        "Content-Type": "text/plain",
+      });
+    }
+    yogaBuf = await yogaObj.arrayBuffer();
+  }
   const image = await generateImage(
     <Card title={title} date={date} domain={domain} />,
     1200,
@@ -104,6 +124,8 @@ app.get("/", async (c) => {
 
       return [];
     },
+    resvgBuf,
+    yogaBuf,
   );
   await c.env.BUCKET.put(`cache/${key}.png`, image);
 
