@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.6.0](https://github.com/re-taro/og.re-taro.dev/compare/2.5.0...v2.6.0) (2023-12-05)
+
+
+### Features
+
+* update R2 bindings name ([8c5bed9](https://github.com/re-taro/og.re-taro.dev/commit/8c5bed9f8fc841e4ecdadebbf2d9278d398eccbc))
+
+
+### Bug Fixes
+
+* **deps:** update dependency hono to v3.11.2 ([#633](https://github.com/re-taro/og.re-taro.dev/issues/633)) ([bfe6784](https://github.com/re-taro/og.re-taro.dev/commit/bfe67848f18c564fdcc60465f59b2983ba63d2e2))
+
 ## [2.5.0](https://github.com/re-taro/og.re-taro.dev/compare/2.4.3...2.5.0) (2023-12-05)
 
 
