@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.5.0](https://github.com/re-taro/og.re-taro.dev/compare/2.4.3...2.5.0) (2023-12-05)
+
+
+### Features
+
+* add vendor and load wasm from Cloudflare R2 ([#632](https://github.com/re-taro/og.re-taro.dev/issues/632)) ([7d56f2b](https://github.com/re-taro/og.re-taro.dev/commit/7d56f2b37f7d9bee7b13156555ab7a6f40bcf56e))
+
+
+### Bug Fixes
+
+* **deps:** update dependency hono to v3.10.3 ([#618](https://github.com/re-taro/og.re-taro.dev/issues/618)) ([d2b4813](https://github.com/re-taro/og.re-taro.dev/commit/d2b4813b27e9f117b2defa635f7df13620aac66b))
+* **deps:** update dependency hono to v3.10.4 ([#623](https://github.com/re-taro/og.re-taro.dev/issues/623)) ([9f699cf](https://github.com/re-taro/og.re-taro.dev/commit/9f699cf65b49c0b7ffef16f53117690992ec7f40))
+* **deps:** update dependency hono to v3.10.5 ([#629](https://github.com/re-taro/og.re-taro.dev/issues/629)) ([6551f8a](https://github.com/re-taro/og.re-taro.dev/commit/6551f8a241de88e66fc3fb98b66490e1cdae91f8))
+* **deps:** update dependency hono to v3.11.1 ([#630](https://github.com/re-taro/og.re-taro.dev/issues/630)) ([3133c9e](https://github.com/re-taro/og.re-taro.dev/commit/3133c9e66f792ca267500e255b666de00d8a2192))
+
 ## [2.4.3](https://github.com/re-taro/og.re-taro.dev/compare/2.4.2...2.4.3) (2023-11-24)
 
 
