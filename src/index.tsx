@@ -8,7 +8,7 @@ import { generateImage } from "./image";
 
 // eslint-disable-next-line ts/consistent-type-definitions
 type Bindings = {
-  BUCKET: R2Bucket;
+  OG_ASSETS: R2Bucket;
 };
 
 const app = new Hono<{ Bindings: Bindings }>();
@@ -22,7 +22,7 @@ app.use(
   "/",
   etag(),
   cache({
-    cacheName: "ogp",
+    cacheName: "og",
     cacheControl: "public, max-age=604800",
   }),
 );
@@ -47,7 +47,7 @@ app.get("/", async (c) => {
   }
 
   const key = `${title}-${date}-${domain}`;
-  const cachedImage = await c.env.BUCKET.get(`cache/${key}.png`);
+  const cachedImage = await c.env.OG_ASSETS.get(`cache/${key}.png`);
   if (cachedImage !== null && typeof cachedImage !== "undefined") {
     const res = new Response(cachedImage.body, {
       headers: {
@@ -62,7 +62,7 @@ app.get("/", async (c) => {
   }
 
   if (notoSansBuf === null) {
-    const fontObj = await c.env.BUCKET.get("fonts/NotoSansJP-Bold.ttf");
+    const fontObj = await c.env.OG_ASSETS.get("fonts/NotoSansJP-Bold.ttf");
     if (fontObj === null || typeof fontObj === "undefined") {
       return c.text("Failed to get font", 500, {
         "Content-Type": "text/plain",
@@ -71,7 +71,7 @@ app.get("/", async (c) => {
     notoSansBuf = await fontObj.arrayBuffer();
   }
   if (jbMonoBuf === null) {
-    const fontObj = await c.env.BUCKET.get("fonts/JetBrainsMono-Medium.ttf");
+    const fontObj = await c.env.OG_ASSETS.get("fonts/JetBrainsMono-Medium.ttf");
     if (fontObj === null || typeof fontObj === "undefined") {
       return c.text("Failed to get font", 500, {
         "Content-Type": "text/plain",
@@ -80,7 +80,7 @@ app.get("/", async (c) => {
     jbMonoBuf = await fontObj.arrayBuffer();
   }
   if (resvgBuf === null) {
-    const resvgObj = await c.env.BUCKET.get("vendor/resvg@v2.6.0.wasm");
+    const resvgObj = await c.env.OG_ASSETS.get("vendor/resvg@v2.6.0.wasm");
     if (resvgObj === null || typeof resvgObj === "undefined") {
       return c.text("Failed to get resvg", 500, {
         "Content-Type": "text/plain",
@@ -89,7 +89,7 @@ app.get("/", async (c) => {
     resvgBuf = await resvgObj.arrayBuffer();
   }
   if (yogaBuf === null) {
-    const yogaObj = await c.env.BUCKET.get("vendor/yoga@v0.3.3.wasm");
+    const yogaObj = await c.env.OG_ASSETS.get("vendor/yoga@v0.3.3.wasm");
     if (yogaObj === null || typeof yogaObj === "undefined") {
       return c.text("Failed to get yoga", 500, {
         "Content-Type": "text/plain",
@@ -127,7 +127,7 @@ app.get("/", async (c) => {
     resvgBuf,
     yogaBuf,
   );
-  await c.env.BUCKET.put(`cache/${key}.png`, image);
+  await c.env.OG_ASSETS.put(`cache/${key}.png`, image);
 
   return new Response(image, {
     headers: {
