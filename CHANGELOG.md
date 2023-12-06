@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.6.1](https://github.com/re-taro/og.re-taro.dev/compare/v2.6.0...v2.6.1) (2023-12-06)
+
+
+### Bug Fixes
+
+* fix binding name ([1f454e9](https://github.com/re-taro/og.re-taro.dev/commit/1f454e90718cc94fb05be9c7d49301f409e3250f))
+
 ## [2.6.0](https://github.com/re-taro/og.re-taro.dev/compare/2.5.0...v2.6.0) (2023-12-05)
 
 
