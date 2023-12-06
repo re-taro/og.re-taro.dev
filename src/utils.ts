@@ -10,3 +10,10 @@ export function withCache(fn: (...args: any[]) => any) {
     return result;
   };
 }
+
+export class ServerError {
+  constructor(
+    public readonly status: number,
+    public readonly message: string,
+  ) { }
+}
