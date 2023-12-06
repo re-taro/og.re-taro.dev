@@ -15,5 +15,5 @@ export class ServerError {
   constructor(
     public readonly status: number,
     public readonly message: string,
-  ) { }
+  ) {}
 }
