@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.0](https://github.com/re-taro/og.re-taro.dev/compare/v2.6.1...v2.7.0) (2023-12-06)
+
+
+### Features
+
+* add error handling ([d5cbdcf](https://github.com/re-taro/og.re-taro.dev/commit/d5cbdcf1f7d52a8eb67d5359e5e1f400537c2398))
+
 ## [2.6.1](https://github.com/re-taro/og.re-taro.dev/compare/v2.6.0...v2.6.1) (2023-12-06)
 
 
