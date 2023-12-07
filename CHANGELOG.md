@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.8.0](https://github.com/re-taro/og.re-taro.dev/compare/v2.7.0...v2.8.0) (2023-12-07)
+
+
+### Features
+
+* downgrade resvg to 2.4.1 ([#642](https://github.com/re-taro/og.re-taro.dev/issues/642)) ([64bf227](https://github.com/re-taro/og.re-taro.dev/commit/64bf22773bb89e9885a50344afbdafed32b67007))
+
+
+### Bug Fixes
+
+* **deps:** update dependency hono to v3.11.3 ([#640](https://github.com/re-taro/og.re-taro.dev/issues/640)) ([01c33c2](https://github.com/re-taro/og.re-taro.dev/commit/01c33c275e506de4e1e92ae1326f159cd3111569))
+
 ## [2.7.0](https://github.com/re-taro/og.re-taro.dev/compare/v2.6.1...v2.7.0) (2023-12-06)
 
 
