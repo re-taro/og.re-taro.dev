@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@resvg/resvg-wasm": "2.6.0",
-    "hono": "3.11.2",
+    "hono": "3.11.3",
     "satori": "0.10.11",
     "yoga-wasm-web": "0.3.3"
   },
