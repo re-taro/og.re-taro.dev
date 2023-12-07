@@ -26,10 +26,8 @@ export async function generateImage(
     languageCode: string,
     segment: string,
   ) => Promise<string | FontOptions[]>,
-  resvgBuf: ArrayBuffer,
-  yogaBuf: ArrayBuffer,
 ): Promise<Uint8Array> {
-  init(resvgBuf, yogaBuf);
+  await init();
   const svg = await satori(element, {
     width,
     height,

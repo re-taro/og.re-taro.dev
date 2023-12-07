@@ -9,15 +9,13 @@ import { ServerError } from "./utils";
 
 // eslint-disable-next-line ts/consistent-type-definitions
 type Bindings = {
-  OG_ASSETS: R2Bucket;
+  BUCKET: R2Bucket;
 };
 
 const app = new Hono<{ Bindings: Bindings }>();
 
 let notoSansBuf: null | ArrayBuffer = null;
 let jbMonoBuf: null | ArrayBuffer = null;
-let resvgBuf: null | ArrayBuffer = null;
-let yogaBuf: null | ArrayBuffer = null;
 
 app.use(
   "/",
@@ -51,7 +49,7 @@ app.get("/", async (c) => {
     }
 
     const key = `${title}-${date}-${domain}`;
-    const cachedImage = await c.env.OG_ASSETS.get(`cache/${key}.png`);
+    const cachedImage = await c.env.BUCKET.get(`cache/${key}.png`);
     if (cachedImage !== null && typeof cachedImage !== "undefined") {
       const res = new Response(cachedImage.body, {
         headers: {
@@ -66,7 +64,7 @@ app.get("/", async (c) => {
     }
 
     if (notoSansBuf === null) {
-      const fontObj = await c.env.OG_ASSETS.get("fonts/NotoSansJP-Bold.ttf");
+      const fontObj = await c.env.BUCKET.get("fonts/NotoSansJP-Bold.ttf");
       if (fontObj === null || typeof fontObj === "undefined") {
         // eslint-disable-next-line ts/no-throw-literal
         throw new ServerError(500, "Failed to get NotoSansJP");
@@ -74,30 +72,12 @@ app.get("/", async (c) => {
       notoSansBuf = await fontObj.arrayBuffer();
     }
     if (jbMonoBuf === null) {
-      const fontObj = await c.env.OG_ASSETS.get(
-        "fonts/JetBrainsMono-Medium.ttf",
-      );
+      const fontObj = await c.env.BUCKET.get("fonts/JetBrainsMono-Medium.ttf");
       if (fontObj === null || typeof fontObj === "undefined") {
         // eslint-disable-next-line ts/no-throw-literal
         throw new ServerError(500, "Failed to get JetBrainsMono");
       }
       jbMonoBuf = await fontObj.arrayBuffer();
-    }
-    if (resvgBuf === null) {
-      const resvgObj = await c.env.OG_ASSETS.get("vendor/resvg@v2.6.0.wasm");
-      if (resvgObj === null || typeof resvgObj === "undefined") {
-        // eslint-disable-next-line ts/no-throw-literal
-        throw new ServerError(500, "Failed to get resvg");
-      }
-      resvgBuf = await resvgObj.arrayBuffer();
-    }
-    if (yogaBuf === null) {
-      const yogaObj = await c.env.OG_ASSETS.get("vendor/yoga@v0.3.3.wasm");
-      if (yogaObj === null || typeof yogaObj === "undefined") {
-        // eslint-disable-next-line ts/no-throw-literal
-        throw new ServerError(500, "Failed to get yoga");
-      }
-      yogaBuf = await yogaObj.arrayBuffer();
     }
     const image = await generateImage(
       <Card title={title} date={date} domain={domain} />,
@@ -126,10 +106,8 @@ app.get("/", async (c) => {
 
         return [];
       },
-      resvgBuf,
-      yogaBuf,
     );
-    await c.env.OG_ASSETS.put(`cache/${key}.png`, image);
+    await c.env.BUCKET.put(`cache/${key}.png`, image);
 
     return new Response(image, {
       headers: {
