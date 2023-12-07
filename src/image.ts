@@ -1,9 +1,9 @@
-import { initWasm as initResvg, Resvg } from "@resvg/resvg-wasm";
+import { Resvg } from "@resvg/resvg-wasm";
 import type { ReactNode } from "react";
-import satori, { init as initSatori } from "satori/wasm";
-import initYoga from "yoga-wasm-web";
+import satori from "satori/wasm";
 
 import { withCache } from "./utils";
+import { genWasmInit } from "./wasm";
 
 type Weight = 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
 type Style$1 = "normal" | "italic";
@@ -15,6 +15,8 @@ interface FontOptions {
   lang?: string;
 }
 
+const init = genWasmInit();
+
 export async function generateImage(
   element: ReactNode,
   width: number,
@@ -24,12 +26,8 @@ export async function generateImage(
     languageCode: string,
     segment: string,
   ) => Promise<string | FontOptions[]>,
-  resvgBuf: ArrayBuffer,
-  yogaBuf: ArrayBuffer,
 ): Promise<Uint8Array> {
-  const yoga = await initYoga(yogaBuf);
-  initSatori(yoga);
-  await initResvg(resvgBuf);
+  await init();
   const svg = await satori(element, {
     width,
     height,

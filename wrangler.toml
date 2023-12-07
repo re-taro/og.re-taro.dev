@@ -3,6 +3,6 @@ main = "src/index.tsx"
 compatibility_date = "2023-05-18"
 
 [[r2_buckets]]
-binding = "OG_ASSETS"
+binding = "BUCKET"
 bucket_name = "og-assets"
 preview_bucket_name = "og-assets"
