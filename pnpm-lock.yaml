@@ -9,8 +9,8 @@ dependencies:
     specifier: 2.4.1
     version: 2.4.1
   hono:
-    specifier: 3.12.3
-    version: 3.12.3
+    specifier: 3.12.4
+    version: 3.12.4
   satori:
     specifier: 0.10.11
     version: 0.10.11
@@ -3126,8 +3126,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /hono@3.12.3:
-    resolution: {integrity: sha512-eymmA0t4YzoBlaZhfcJiR6wC9tIdIgx68fdHYCpbKf0RMYXux+uJjwuZSAa2pKPNXZd6K6oGgizqaiLDvQ5jzg==}
+  /hono@3.12.4:
+    resolution: {integrity: sha512-tEkoBCmhMoQdnBJ3hNUZm9UVA6XkSm6YaPxN8xMaKvz062KhYnd52s/GbmxFywO0vsb+T+wjaJ0708NY7Tr1VA==}
     engines: {node: '>=16.0.0'}
     dev: false
 
