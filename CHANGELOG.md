@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.8.5](https://github.com/re-taro/og.re-taro.dev/compare/v2.8.4...v2.8.5) (2024-02-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency hono to v3.12.10 ([#714](https://github.com/re-taro/og.re-taro.dev/issues/714)) ([3987da7](https://github.com/re-taro/og.re-taro.dev/commit/3987da79377a0f7cf5ba9770db527d239ec6bd2d))
+* **deps:** update dependency hono to v3.12.8 ([#705](https://github.com/re-taro/og.re-taro.dev/issues/705)) ([cfe075e](https://github.com/re-taro/og.re-taro.dev/commit/cfe075edf5762901272c65fd6aa3b34dd2b007b5))
+* **deps:** update dependency hono to v3.12.9 ([#711](https://github.com/re-taro/og.re-taro.dev/issues/711)) ([1f1191a](https://github.com/re-taro/og.re-taro.dev/commit/1f1191a3f52fb7e0a90c4191d822fb0bd93a4805))
+* **deps:** update dependency satori to v0.10.13 ([#710](https://github.com/re-taro/og.re-taro.dev/issues/710)) ([5b7756a](https://github.com/re-taro/og.re-taro.dev/commit/5b7756a829a3f281a26f6f1db32122df4a9260b1))
+
 ## [2.8.4](https://github.com/re-taro/og.re-taro.dev/compare/v2.8.3...v2.8.4) (2024-01-25)
 
 
