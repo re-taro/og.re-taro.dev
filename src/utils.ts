@@ -1,3 +1,5 @@
+import type { StatusCode } from "hono/utils/http-status";
+
 export function withCache(fn: (...args: any[]) => any) {
 	const cache = new Map();
 
@@ -15,7 +17,7 @@ export function withCache(fn: (...args: any[]) => any) {
 
 export class ServerError {
 	constructor(
-		public readonly status: number,
+		public readonly status: StatusCode,
 		public readonly message: string,
 	) {}
 }
