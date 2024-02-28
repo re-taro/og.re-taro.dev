@@ -6,17 +6,17 @@ import wasmResvg from "../node_modules/@resvg/resvg-wasm/index_bg.wasm";
 import wasmYoga from "../node_modules/yoga-wasm-web/dist/yoga.wasm";
 
 export function genWasmInit() {
-  // eslint-disable-next-line unused-imports/no-unused-vars
-  let isInit = false;
+	// eslint-disable-next-line unused-imports/no-unused-vars
+	let isInit = false;
 
-  return async () => {
-    if (isInit) {
-      return;
-    }
+	return async () => {
+		if (isInit) {
+			return;
+		}
 
-    const yoga = await initYoga(wasmYoga);
-    initSatori(yoga);
-    await initResvg(wasmResvg);
-    isInit = true;
-  };
+		const yoga = await initYoga(wasmYoga);
+		initSatori(yoga);
+		await initResvg(wasmResvg);
+		isInit = true;
+	};
 }

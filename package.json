@@ -1,39 +1,43 @@
 {
-  "name": "og.re-taro.dev",
-  "description": "My personal OGP API",
-  "version": "2.8.6",
-  "packageManager": "pnpm@8.15.4",
-  "license": "MIT",
-  "author": {
-    "name": "Rintaro Itokawa",
-    "email": "me@re-taro.dev",
-    "url": "https://re-taro.dev"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/re-taro/ogp.re-taro.dev"
-  },
-  "type": "module",
-  "scripts": {
-    "build": "wrangler deploy --dry-run --minify --outdir dist",
-    "start": "wrangler dev",
-    "lint": "eslint . && prettier . -c",
-    "lint:fix": "eslint . --fix && prettier . -w"
-  },
-  "dependencies": {
-    "@resvg/resvg-wasm": "2.4.1",
-    "hono": "4.0.8",
-    "satori": "0.10.13",
-    "yoga-wasm-web": "0.3.3"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "4.20240222.0",
-    "@re-taro/eslint-config": "3.0.0",
-    "@types/react": "18.2.60",
-    "eslint": "8.57.0",
-    "prettier": "3.2.5",
-    "react": "18.2.0",
-    "typescript": "5.3.3",
-    "wrangler": "3.30.0"
-  }
+	"name": "og.re-taro.dev",
+	"version": "2.8.6",
+	"packageManager": "pnpm@8.15.4",
+	"author": "Rintaro Itokawa <me@re-taro.dev> (https://re-taro.dev)",
+	"type": "module",
+	"description": "My personal OG API",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/re-taro/og.re-taro.dev"
+	},
+	"license": "MIT",
+	"scripts": {
+		"build": "wrangler deploy --dry-run --minify --outdir dist",
+		"fmt": "run-s -c fmt:*",
+		"fmt:eslint": "pnpm run lint:eslint --fix",
+		"fmt:prettier": "prettier . -w",
+		"lint": "run-p -c lint:*",
+		"lint:eslint": "eslint .",
+		"lint:prettier": "prettier . -c",
+		"lint:tsc": "tsc -p . --noEmit",
+		"start": "wrangler dev --remote"
+	},
+	"dependencies": {
+		"@resvg/resvg-wasm": "2.4.1",
+		"budoux": "0.6.2",
+		"hono": "4.0.8",
+		"satori": "0.10.13",
+		"yoga-wasm-web": "0.3.3"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "4.20240222.0",
+		"@re-taro/eslint-config": "3.0.0",
+		"@re-taro/prettier-config": "2.0.0",
+		"@types/react": "18.2.58",
+		"eslint": "8.57.0",
+		"npm-run-all2": "6.1.2",
+		"prettier": "3.2.5",
+		"react": "18.2.0",
+		"typescript": "5.3.3",
+		"wrangler": "3.30.0"
+	}
 }
