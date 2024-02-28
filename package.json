@@ -32,7 +32,7 @@
 		"@cloudflare/workers-types": "4.20240222.0",
 		"@re-taro/eslint-config": "3.0.0",
 		"@re-taro/prettier-config": "2.0.0",
-		"@types/react": "18.2.58",
+		"@types/react": "18.2.60",
 		"eslint": "8.57.0",
 		"npm-run-all2": "6.1.2",
 		"prettier": "3.2.5",
