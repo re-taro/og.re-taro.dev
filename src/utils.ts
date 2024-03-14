@@ -5,9 +5,9 @@ export function withCache(fn: (...args: any[]) => any) {
 
 	return async (...args: string[]) => {
 		const key = args.join(":");
-		if (cache.has(key)) {
+		if (cache.has(key))
 			return cache.get(key);
-		}
+
 		const result = await fn(...args);
 		cache.set(key, result);
 
