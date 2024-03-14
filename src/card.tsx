@@ -70,52 +70,54 @@ export const Card: FC<CardProps> = ({ titleNode, textNode, tmp }) => {
 	return tmp === "plain" ? <PlainCard {...props} /> : <ColorCard {...props} />;
 };
 
-const styles = ({
+function styles({
 	tmp,
 }: Pick<CardProps, "tmp">): Record<
 	"container" | "gradation" | "inner" | "heading" | "paragraph" | "span",
 	CSSProperties
-> => ({
-	container: {
-		width: "100vw",
-		height: "100vh",
-		padding: tmp === "plain" ? "8rem" : 0,
-		display: "flex",
-		flexDirection: "column",
-		justifyContent: "center",
-		backgroundColor: "#0b1215",
-	},
-	gradation: {
-		position: "absolute",
-		width: "1200px",
-		height: "630px",
-		filter: "blur(196.875px) saturate(125%)",
-		backgroundImage:
+> {
+	return {
+		container: {
+			width: "100vw",
+			height: "100vh",
+			padding: tmp === "plain" ? "8rem" : 0,
+			display: "flex",
+			flexDirection: "column",
+			justifyContent: "center",
+			backgroundColor: "#0b1215",
+		},
+		gradation: {
+			position: "absolute",
+			width: "1200px",
+			height: "630px",
+			filter: "blur(196.875px) saturate(125%)",
+			backgroundImage:
 			"linear-gradient(45deg, #0c1418, #ff7f00, #00a0b0, #0c1820)",
-		opacity: 0.92,
-	},
-	inner: {
-		padding: tmp === "color" ? "8rem" : 0,
-		display: "flex",
-		flexDirection: "column",
-	},
-	heading: {
-		fontSize: "3.75rem",
-		lineHeight: 1.25,
-		color: "#ebeeef",
-		fontWeight: 700,
-		fontFamily: "NotoSansJP",
-		flexWrap: "wrap",
-	},
-	paragraph: {
-		fontSize: "1.875rem",
-		lineHeight: "2.25rem",
-		color: tmp === "plain" ? "#6d7173" : "#ebeeef",
-		fontWeight: 500,
-		fontFamily: "JetBrainsMono",
-		flexWrap: "wrap",
-	},
-	span: {
-		display: "block",
-	},
-});
+			opacity: 0.92,
+		},
+		inner: {
+			padding: tmp === "color" ? "8rem" : 0,
+			display: "flex",
+			flexDirection: "column",
+		},
+		heading: {
+			fontSize: "3.75rem",
+			lineHeight: 1.25,
+			color: "#ebeeef",
+			fontWeight: 700,
+			fontFamily: "NotoSansJP",
+			flexWrap: "wrap",
+		},
+		paragraph: {
+			fontSize: "1.875rem",
+			lineHeight: "2.25rem",
+			color: tmp === "plain" ? "#6d7173" : "#ebeeef",
+			fontWeight: 500,
+			fontFamily: "JetBrainsMono",
+			flexWrap: "wrap",
+		},
+		span: {
+			display: "block",
+		},
+	};
+}

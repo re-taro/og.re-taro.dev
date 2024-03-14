@@ -62,30 +62,30 @@ app.get("/", async (c) => {
 				return new Response(cachedImage.body, {
 					headers: {
 						"Cache-Control": "public, max-age=604800",
-						ETag: `W/${cachedImage.httpEtag}`,
+						"ETag": `W/${cachedImage.httpEtag}`,
 						"Content-Type":
-							cachedImage.httpMetadata?.contentType ??
-							"application/octet-stream",
+							cachedImage.httpMetadata?.contentType
+							?? "application/octet-stream",
 					},
 				});
 			}
 
 			if (notoSansBuf === null) {
 				const fontObj = await c.env.BUCKET.get("fonts/NotoSansJP-Bold.ttf");
-				if (fontObj === null || typeof fontObj === "undefined") {
-					// eslint-disable-next-line ts/no-throw-literal
+				if (fontObj === null || typeof fontObj === "undefined")
+
 					throw new ServerError(500, "Failed to get NotoSansJP");
-				}
+
 				notoSansBuf = await fontObj.arrayBuffer();
 			}
 			if (jbMonoBuf === null) {
 				const fontObj = await c.env.BUCKET.get(
 					"fonts/JetBrainsMono-Medium.ttf",
 				);
-				if (fontObj === null || typeof fontObj === "undefined") {
-					// eslint-disable-next-line ts/no-throw-literal
+				if (fontObj === null || typeof fontObj === "undefined")
+
 					throw new ServerError(500, "Failed to get JetBrainsMono");
-				}
+
 				jbMonoBuf = await fontObj.arrayBuffer();
 			}
 			const titleNode = parser.parse(title);
@@ -127,17 +127,20 @@ app.get("/", async (c) => {
 					"Conetnt-Type": "image/png",
 				},
 			});
-		} else {
+		}
+		else {
 			return c.text("Parameter not definer: title", 400, {
 				"Content-Type": "text/plain",
 			});
 		}
-	} catch (e: unknown) {
+	}
+	catch (e: unknown) {
 		if (e instanceof ServerError) {
 			return c.text(e.message, e.status, {
 				"Content-Type": "text/plain",
 			});
-		} else if (e instanceof Error) {
+		}
+		else if (e instanceof Error) {
 			return c.text(
 				`[${e.name}]: ${e.message} ${e.stack && `(${e.stack})`}`,
 				500,
@@ -145,7 +148,8 @@ app.get("/", async (c) => {
 					"Content-Type": "text/plain",
 				},
 			);
-		} else {
+		}
+		else {
 			return c.text("Internal Server Error", 500, {
 				"Content-Type": "text/plain",
 			});
