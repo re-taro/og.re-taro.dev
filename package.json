@@ -2,7 +2,7 @@
 	"name": "og.re-taro.dev",
 	"type": "module",
 	"version": "3.0.0",
-	"packageManager": "pnpm@8.15.4",
+	"packageManager": "pnpm@8.15.5",
 	"description": "My personal OG API",
 	"author": "Rintaro Itokawa <me@re-taro.dev> (https://re-taro.dev)",
 	"license": "MIT",
