@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@resvg/resvg-wasm':
-    specifier: 2.4.1
-    version: 2.4.1
+    specifier: 2.6.1
+    version: 2.6.1
   budoux:
     specifier: 0.6.2
     version: 0.6.2
@@ -582,8 +582,8 @@ packages:
       eslint: 8.57.0
     dev: true
 
-  /@resvg/resvg-wasm@2.4.1:
-    resolution: {integrity: sha512-yi6R0HyHtsoWTRA06Col4WoDs7SvlXU3DLMNP2bdAgs7HK18dTEVl1weXgxRzi8gwLteGUbIg29zulxIB3GSdg==}
+  /@resvg/resvg-wasm@2.6.1:
+    resolution: {integrity: sha512-KRfDNpnkTRSDmIC9p/kRyx0zYAxsTOkx/1WpMOfX8p+IZxDdOD4z/6mb4wUqeS9aqFBiEYSL2uUQca7dpN6tmg==}
     engines: {node: '>= 10'}
     dev: false
 

@@ -20,7 +20,7 @@
 		"start": "wrangler dev --remote"
 	},
 	"dependencies": {
-		"@resvg/resvg-wasm": "2.4.1",
+		"@resvg/resvg-wasm": "2.6.1",
 		"budoux": "0.6.2",
 		"hono": "4.1.4",
 		"satori": "0.10.13",
