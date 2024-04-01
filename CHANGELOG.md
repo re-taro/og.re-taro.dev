@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.0.2](https://github.com/re-taro/og.re-taro.dev/compare/v3.0.1...v3.0.2) (2024-03-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @resvg/resvg-wasm to v2.6.1 ([#798](https://github.com/re-taro/og.re-taro.dev/issues/798)) ([9731c6e](https://github.com/re-taro/og.re-taro.dev/commit/9731c6e713c8d58bf5f6551187a851f648b97bfb))
+* **deps:** update dependency @resvg/resvg-wasm to v2.6.2 ([#800](https://github.com/re-taro/og.re-taro.dev/issues/800)) ([7465e98](https://github.com/re-taro/og.re-taro.dev/commit/7465e98b38654526bdd3f6198ba43167940743de))
+* **deps:** update dependency hono to v4.1.2 ([#786](https://github.com/re-taro/og.re-taro.dev/issues/786)) ([248c3d8](https://github.com/re-taro/og.re-taro.dev/commit/248c3d884f395040c45daf6b82382daeea1ac231))
+* **deps:** update dependency hono to v4.1.3 ([#789](https://github.com/re-taro/og.re-taro.dev/issues/789)) ([499bb7b](https://github.com/re-taro/og.re-taro.dev/commit/499bb7b4ecd61b876f20f3491ddda7a45928b141))
+* **deps:** update dependency hono to v4.1.4 ([#797](https://github.com/re-taro/og.re-taro.dev/issues/797)) ([d3d5165](https://github.com/re-taro/og.re-taro.dev/commit/d3d51656a7bdb2b04b27c3c95fd35aa474f2a6b9))
+* **deps:** update dependency hono to v4.1.5 ([#805](https://github.com/re-taro/og.re-taro.dev/issues/805)) ([b079bca](https://github.com/re-taro/og.re-taro.dev/commit/b079bcacdc173e023fc3c26fc174bac0b95b04ac))
+* **deps:** update dependency hono to v4.1.7 ([#809](https://github.com/re-taro/og.re-taro.dev/issues/809)) ([37b412d](https://github.com/re-taro/og.re-taro.dev/commit/37b412d1419b668c769b438f55ceb9244ce9f5b4))
+
 ## [3.0.1](https://github.com/re-taro/og.re-taro.dev/compare/v3.0.0...v3.0.1) (2024-03-18)
 
 
