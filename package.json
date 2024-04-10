@@ -33,7 +33,7 @@
 		"eslint": "9.0.0",
 		"npm-run-all2": "6.1.2",
 		"react": "18.2.0",
-		"typescript": "5.4.4",
+		"typescript": "5.4.5",
 		"wrangler": "3.48.0"
 	}
 }
