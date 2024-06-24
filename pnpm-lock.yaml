@@ -15,8 +15,8 @@ importers:
         specifier: 0.6.2
         version: 0.6.2
       hono:
-        specifier: 4.4.7
-        version: 4.4.7
+        specifier: 4.4.8
+        version: 4.4.8
       satori:
         specifier: 0.10.13
         version: 0.10.13
@@ -1272,8 +1272,8 @@ packages:
     resolution: {integrity: sha512-Ox1pJVrDCyGHMG9CFg1tmrRUMRPRsAWYc/PinY0XzJU4K7y7vjNoLKIQ7BR5UJMCxNN8EM1MNDmHWA/B3aZUuw==}
     engines: {node: '>=6'}
 
-  hono@4.4.7:
-    resolution: {integrity: sha512-WoQWFQyVFEVRtIzP5sHPv7nvIw+RYL/HRnvnOCDxj6A+BtrwuC9S0vryZbV4IyFcNgOJ87r/phDiC1x2eEo4Gg==}
+  hono@4.4.8:
+    resolution: {integrity: sha512-eewnSgTzdWgFVn97kPV24h+9UVNUQ+9mj6IRxr7dBseTaTBSHtFo/T/vRNcqJkQFysVoXyecflr3Xe/fdvzEpQ==}
     engines: {node: '>=16.0.0'}
 
   hosted-git-info@2.8.9:
@@ -3706,7 +3706,7 @@ snapshots:
 
   hex-rgb@4.3.0: {}
 
-  hono@4.4.7: {}
+  hono@4.4.8: {}
 
   hosted-git-info@2.8.9: {}
 
