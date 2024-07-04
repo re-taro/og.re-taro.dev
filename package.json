@@ -23,7 +23,7 @@
 		"@resvg/resvg-wasm": "2.6.2",
 		"budoux": "0.6.2",
 		"hono": "4.4.11",
-		"satori": "0.10.13",
+		"satori": "0.10.14",
 		"yoga-wasm-web": "0.3.3"
 	},
 	"devDependencies": {
