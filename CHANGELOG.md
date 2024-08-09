@@ -1,5 +1,24 @@
 # Changelog
 
+## [3.0.6](https://github.com/re-taro/og.re-taro.dev/compare/v3.0.5...v3.0.6) (2024-08-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency hono to v4.4.10 ([#936](https://github.com/re-taro/og.re-taro.dev/issues/936)) ([6cb7b7d](https://github.com/re-taro/og.re-taro.dev/commit/6cb7b7d1d1a5692ed0e1934376d8eb62d29f2292))
+* **deps:** update dependency hono to v4.4.11 ([#939](https://github.com/re-taro/og.re-taro.dev/issues/939)) ([efafaf0](https://github.com/re-taro/og.re-taro.dev/commit/efafaf06a40f5ad405240233d4395b7ab01a59e6))
+* **deps:** update dependency hono to v4.4.12 ([#945](https://github.com/re-taro/og.re-taro.dev/issues/945)) ([0601d51](https://github.com/re-taro/og.re-taro.dev/commit/0601d51a4ed2dcd683d58ab4472c68bbec79f3b5))
+* **deps:** update dependency hono to v4.4.13 ([#948](https://github.com/re-taro/og.re-taro.dev/issues/948)) ([3eb02a6](https://github.com/re-taro/og.re-taro.dev/commit/3eb02a6a9eb3ab8668fed58ca9b6d9478d87ca81))
+* **deps:** update dependency hono to v4.4.7 ([#928](https://github.com/re-taro/og.re-taro.dev/issues/928)) ([14c3534](https://github.com/re-taro/og.re-taro.dev/commit/14c3534edd3ae4f099861f63d7ca98c0c8f93b48))
+* **deps:** update dependency hono to v4.4.8 ([#932](https://github.com/re-taro/og.re-taro.dev/issues/932)) ([95c306e](https://github.com/re-taro/og.re-taro.dev/commit/95c306e20acb93b6f1bf3f74225f7cf01fddf661))
+* **deps:** update dependency hono to v4.4.9 ([#934](https://github.com/re-taro/og.re-taro.dev/issues/934)) ([0110718](https://github.com/re-taro/og.re-taro.dev/commit/011071858841f0cf836a0de59017a2fe3e5358a3))
+* **deps:** update dependency hono to v4.5.0 ([#954](https://github.com/re-taro/og.re-taro.dev/issues/954)) ([6394417](https://github.com/re-taro/og.re-taro.dev/commit/639441710fc3e02b5b10802566996529fc893afd))
+* **deps:** update dependency hono to v4.5.1 ([#957](https://github.com/re-taro/og.re-taro.dev/issues/957)) ([c642793](https://github.com/re-taro/og.re-taro.dev/commit/c64279305c98454433e30b9e8ae2a50594e9ae94))
+* **deps:** update dependency hono to v4.5.2 ([#966](https://github.com/re-taro/og.re-taro.dev/issues/966)) ([51fac58](https://github.com/re-taro/og.re-taro.dev/commit/51fac58efa707ee39426d2730110f02c009a9567))
+* **deps:** update dependency hono to v4.5.3 ([#968](https://github.com/re-taro/og.re-taro.dev/issues/968)) ([21b3fae](https://github.com/re-taro/og.re-taro.dev/commit/21b3fae32ceaf5060bee395b58ce110f4b8cf7da))
+* **deps:** update dependency hono to v4.5.4 ([#971](https://github.com/re-taro/og.re-taro.dev/issues/971)) ([8efdb04](https://github.com/re-taro/og.re-taro.dev/commit/8efdb044b08ef570364fe73d5a72b32e566df819))
+* **deps:** update dependency satori to v0.10.14 ([#943](https://github.com/re-taro/og.re-taro.dev/issues/943)) ([7b86e2c](https://github.com/re-taro/og.re-taro.dev/commit/7b86e2cb0376e06588c7a5110114794a2f91da83))
+
 ## [3.0.5](https://github.com/re-taro/og.re-taro.dev/compare/v3.0.4...v3.0.5) (2024-06-13)
 
 
