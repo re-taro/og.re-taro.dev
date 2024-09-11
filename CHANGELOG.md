@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.9](https://github.com/re-taro/og.re-taro.dev/compare/v3.0.8...v3.0.9) (2024-09-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency hono to v4.6.1 ([#1008](https://github.com/re-taro/og.re-taro.dev/issues/1008)) ([09d145e](https://github.com/re-taro/og.re-taro.dev/commit/09d145e5dd06d56a49913961fbab44ece3a39c87))
+
 ## [3.0.8](https://github.com/re-taro/og.re-taro.dev/compare/v3.0.7...v3.0.8) (2024-09-03)
 
 
