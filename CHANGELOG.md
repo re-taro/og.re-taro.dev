@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.10](https://github.com/re-taro/og.re-taro.dev/compare/v3.0.9...v3.0.10) (2024-09-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency satori to v0.11.0 ([#1013](https://github.com/re-taro/og.re-taro.dev/issues/1013)) ([385e00f](https://github.com/re-taro/og.re-taro.dev/commit/385e00fb9e2e69b17ff9cbf6e5dcc55481f5c82f))
+
 ## [3.0.9](https://github.com/re-taro/og.re-taro.dev/compare/v3.0.8...v3.0.9) (2024-09-11)
 
 
