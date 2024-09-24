@@ -29,7 +29,7 @@
 	"devDependencies": {
 		"@cloudflare/workers-types": "4.20240909.0",
 		"@re-taro/eslint-config": "4.1.0",
-		"@types/react": "18.3.8",
+		"@types/react": "18.3.9",
 		"eslint": "9.11.1",
 		"npm-run-all2": "6.2.3",
 		"react": "18.3.1",
