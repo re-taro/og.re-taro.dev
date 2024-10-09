@@ -48,7 +48,7 @@ jobs:
         with:
           node-version-file: .tool-versions
       - name: Publish to Cloudflare Workers
-        uses: cloudflare/wrangler-action@v3.8.0
+        uses: cloudflare/wrangler-action@v3.9.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
