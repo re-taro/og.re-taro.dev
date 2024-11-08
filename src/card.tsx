@@ -2,14 +2,14 @@ import type { CSSProperties, FC } from "react";
 import type { CardTemplate } from "./constant";
 
 export interface CardProps {
-	titleNode: string[];
 	textNode: string[];
+	titleNode: string[];
 	tmp: CardTemplate;
 }
 
-const PlainCard: FC<Pick<CardProps, "titleNode" | "textNode">> = ({
-	titleNode,
+const PlainCard: FC<Pick<CardProps, "textNode" | "titleNode">> = ({
 	textNode,
+	titleNode,
 }) => {
 	const s = styles({ tmp: "plain" });
 
@@ -17,15 +17,15 @@ const PlainCard: FC<Pick<CardProps, "titleNode" | "textNode">> = ({
 		<article style={s.container}>
 			<div style={s.inner}>
 				<h1 style={s.heading}>
-					{titleNode.map((word, i) => (
-						<span key={i} style={s.span}>
+					{titleNode.map(word => (
+						<span key={word} style={s.span}>
 							{word}
 						</span>
 					))}
 				</h1>
 				<p style={s.paragraph}>
-					{textNode.map((word, i) => (
-						<span key={i} style={s.span}>
+					{textNode.map(word => (
+						<span key={word} style={s.span}>
 							{word}
 						</span>
 					))}
@@ -35,9 +35,9 @@ const PlainCard: FC<Pick<CardProps, "titleNode" | "textNode">> = ({
 	);
 };
 
-const ColorCard: FC<Pick<CardProps, "titleNode" | "textNode">> = ({
-	titleNode,
+const ColorCard: FC<Pick<CardProps, "textNode" | "titleNode">> = ({
 	textNode,
+	titleNode,
 }) => {
 	const s = styles({ tmp: "color" });
 
@@ -46,15 +46,15 @@ const ColorCard: FC<Pick<CardProps, "titleNode" | "textNode">> = ({
 			<div style={s.gradation} />
 			<div style={s.inner}>
 				<h1 style={s.heading}>
-					{titleNode.map((word, i) => (
-						<span key={i} style={s.span}>
+					{titleNode.map(word => (
+						<span key={word} style={s.span}>
 							{word}
 						</span>
 					))}
 				</h1>
 				<p style={s.paragraph}>
-					{textNode.map((word, i) => (
-						<span key={i} style={s.span}>
+					{textNode.map(word => (
+						<span key={word} style={s.span}>
 							{word}
 						</span>
 					))}
@@ -64,8 +64,8 @@ const ColorCard: FC<Pick<CardProps, "titleNode" | "textNode">> = ({
 	);
 };
 
-export const Card: FC<CardProps> = ({ titleNode, textNode, tmp }) => {
-	const props = { titleNode, textNode };
+export const Card: FC<CardProps> = ({ textNode, titleNode, tmp }) => {
+	const props = { textNode, titleNode };
 
 	return tmp === "plain" ? <PlainCard {...props} /> : <ColorCard {...props} />;
 };
@@ -73,48 +73,48 @@ export const Card: FC<CardProps> = ({ titleNode, textNode, tmp }) => {
 function styles({
 	tmp,
 }: Pick<CardProps, "tmp">): Record<
-	"container" | "gradation" | "inner" | "heading" | "paragraph" | "span",
-	CSSProperties
-> {
+	"container" | "gradation" | "heading" | "inner" | "paragraph" | "span",
+		CSSProperties
+	> {
 	return {
 		container: {
-			width: "100vw",
-			height: "100vh",
-			padding: tmp === "plain" ? "8rem" : 0,
+			backgroundColor: "#0b1215",
 			display: "flex",
 			flexDirection: "column",
+			height: "100vh",
 			justifyContent: "center",
-			backgroundColor: "#0b1215",
+			padding: tmp === "plain" ? "8rem" : 0,
+			width: "100vw",
 		},
 		gradation: {
+			backgroundImage:
+				"linear-gradient(45deg, #0c1418, #ff7f00, #00a0b0, #0c1820)",
+			filter: "blur(196.875px) saturate(125%)",
+			height: "630px",
+			opacity: 0.92,
 			position: "absolute",
 			width: "1200px",
-			height: "630px",
-			filter: "blur(196.875px) saturate(125%)",
-			backgroundImage:
-			"linear-gradient(45deg, #0c1418, #ff7f00, #00a0b0, #0c1820)",
-			opacity: 0.92,
-		},
-		inner: {
-			padding: tmp === "color" ? "8rem" : 0,
-			display: "flex",
-			flexDirection: "column",
 		},
 		heading: {
-			fontSize: "3.75rem",
-			lineHeight: 1.25,
 			color: "#ebeeef",
-			fontWeight: 700,
-			fontFamily: "NotoSansJP",
 			flexWrap: "wrap",
+			fontFamily: "NotoSansJP",
+			fontSize: "3.75rem",
+			fontWeight: 700,
+			lineHeight: 1.25,
+		},
+		inner: {
+			display: "flex",
+			flexDirection: "column",
+			padding: tmp === "color" ? "8rem" : 0,
 		},
 		paragraph: {
-			fontSize: "1.875rem",
-			lineHeight: "2.25rem",
 			color: tmp === "plain" ? "#6d7173" : "#ebeeef",
-			fontWeight: 500,
-			fontFamily: "JetBrainsMono",
 			flexWrap: "wrap",
+			fontFamily: "JetBrainsMono",
+			fontSize: "1.875rem",
+			fontWeight: 500,
+			lineHeight: "2.25rem",
 		},
 		span: {
 			display: "block",

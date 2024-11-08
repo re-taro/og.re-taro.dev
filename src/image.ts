@@ -6,13 +6,13 @@ import { withCache } from "./utils";
 import { genWasmInit } from "./wasm";
 
 type Weight = 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
-type Style$1 = "normal" | "italic";
+type Style$1 = "italic" | "normal";
 interface FontOptions {
 	data: ArrayBuffer;
 	name: string;
-	weight?: Weight;
-	style?: Style$1;
 	lang?: string;
+	style?: Style$1;
+	weight?: Weight;
 }
 
 const init = genWasmInit();
@@ -25,14 +25,14 @@ export async function generateImage(
 	loadAdditionalAsset: (
 		languageCode: string,
 		segment: string,
-	) => Promise<string | FontOptions[]>,
+	) => Promise<FontOptions[] | string>,
 ): Promise<Uint8Array> {
 	await init();
 	const svg = await satori(element, {
-		width,
-		height,
 		fonts,
+		height,
 		loadAdditionalAsset: withCache(loadAdditionalAsset),
+		width,
 	});
 	const png = new Resvg(svg).render().asPng();
 

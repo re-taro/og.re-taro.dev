@@ -1,39 +1,39 @@
 {
-	"name": "og.re-taro.dev",
-	"type": "module",
-	"version": "3.0.10",
-	"packageManager": "pnpm@9.12.3",
-	"description": "My personal OG API",
-	"author": "Rintaro Itokawa <me@re-taro.dev> (https://re-taro.dev)",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/re-taro/og.re-taro.dev"
-	},
-	"scripts": {
-		"build": "wrangler deploy --dry-run --minify --outdir dist",
-		"fmt": "run-s -c fmt:*",
-		"fmt:eslint": "pnpm run lint:eslint --fix",
-		"lint": "run-p -c lint:*",
-		"lint:eslint": "eslint .",
-		"lint:tsc": "tsc -p . --noEmit",
-		"start": "wrangler dev --remote"
-	},
-	"dependencies": {
-		"@resvg/resvg-wasm": "2.6.2",
-		"budoux": "0.6.3",
-		"hono": "4.6.9",
-		"satori": "0.11.3",
-		"yoga-wasm-web": "0.3.3"
-	},
-	"devDependencies": {
-		"@cloudflare/workers-types": "4.20241106.0",
-		"@re-taro/eslint-config": "4.1.0",
-		"@types/react": "18.3.12",
-		"eslint": "9.14.0",
-		"npm-run-all2": "7.0.1",
-		"react": "18.3.1",
-		"typescript": "5.6.3",
-		"wrangler": "3.86.0"
-	}
+  "name": "og.re-taro.dev",
+  "type": "module",
+  "version": "3.0.10",
+  "packageManager": "pnpm@9.12.3",
+  "description": "My personal OG API",
+  "author": "Rintaro Itokawa <me@re-taro.dev> (https://re-taro.dev)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/re-taro/og.re-taro.dev"
+  },
+  "scripts": {
+    "build": "wrangler deploy --dry-run --minify --outdir dist",
+    "fmt": "run-s -c fmt:*",
+    "fmt:eslint": "pnpm run lint:eslint --fix",
+    "lint": "run-p -c lint:*",
+    "lint:eslint": "eslint .",
+    "lint:tsc": "tsc -p . --noEmit",
+    "start": "wrangler dev --remote"
+  },
+  "dependencies": {
+    "@resvg/resvg-wasm": "2.6.2",
+    "budoux": "0.6.3",
+    "hono": "4.6.9",
+    "satori": "0.11.3",
+    "yoga-wasm-web": "0.3.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20241106.0",
+    "@re-taro/eslint-config": "5.2.1",
+    "@types/react": "18.3.12",
+    "eslint": "9.14.0",
+    "npm-run-all2": "7.0.1",
+    "react": "18.3.1",
+    "typescript": "5.6.3",
+    "wrangler": "3.86.0"
+  }
 }
