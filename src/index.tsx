@@ -17,15 +17,15 @@ type Bindings = {
 const app = new Hono<{ Bindings: Bindings }>();
 const parser = new Parser(jaModel);
 
-let notoSansBuf: null | ArrayBuffer = null;
-let jbMonoBuf: null | ArrayBuffer = null;
+let notoSansBuf: ArrayBuffer | null = null;
+let jbMonoBuf: ArrayBuffer | null = null;
 
 app.use(
 	"/",
 	etag(),
 	cache({
-		cacheName: "og",
 		cacheControl: "public, max-age=604800",
+		cacheName: "og",
 	}),
 );
 
@@ -42,16 +42,16 @@ app.get("/", async (c) => {
 				const etag = c.req.raw.headers.get("If-None-Match");
 				if (etag !== null && etag === cachedRes.headers.get("ETag")) {
 					return new Response(null, {
-						status: 304,
 						headers: cachedRes.headers,
+						status: 304,
 					});
 				}
 
 				return new Response(cachedRes.body, {
+					cf: cachedRes.cf,
+					headers: cachedRes.headers,
 					status: cachedRes.status,
 					statusText: cachedRes.statusText,
-					headers: cachedRes.headers,
-					cf: cachedRes.cf,
 					webSocket: cachedRes.webSocket,
 				});
 			}
@@ -62,10 +62,10 @@ app.get("/", async (c) => {
 				return new Response(cachedImage.body, {
 					headers: {
 						"Cache-Control": "public, max-age=604800",
-						"ETag": `W/${cachedImage.httpEtag}`,
 						"Content-Type":
 							cachedImage.httpMetadata?.contentType
 							?? "application/octet-stream",
+						"ETag": `W/${cachedImage.httpEtag}`,
 					},
 				});
 			}
@@ -92,21 +92,21 @@ app.get("/", async (c) => {
 			const textNode = text ? parser.parse(text) : [];
 
 			const image = await generateImage(
-				<Card titleNode={titleNode} textNode={textNode} tmp={tmp} />,
+				<Card textNode={textNode} titleNode={titleNode} tmp={tmp} />,
 				1200,
 				630,
 				[
 					{
-						name: "NotoSansJP",
 						data: notoSansBuf,
-						weight: 700,
+						name: "NotoSansJP",
 						style: "normal",
+						weight: 700,
 					},
 					{
-						name: "JetBrainsMono",
 						data: jbMonoBuf,
-						weight: 500,
+						name: "JetBrainsMono",
 						style: "normal",
+						weight: 500,
 					},
 				],
 				async (code, text) => {

@@ -1,1 +1,1 @@
-export type CardTemplate = "plain" | "color";
+export type CardTemplate = "color" | "plain";
