@@ -1,7 +1,7 @@
 {
   "name": "og.re-taro.dev",
   "type": "module",
-  "version": "3.0.11",
+  "version": "3.0.12",
   "packageManager": "pnpm@9.15.4",
   "description": "My personal OG API",
   "author": "Rintaro Itokawa <me@re-taro.dev> (https://re-taro.dev)",
